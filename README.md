@@ -1,1 +1,2 @@
-Clément Canonne's website.
+# Clément Canonne's website.
+ccanonne.github.io/
