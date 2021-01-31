@@ -1,0 +1,84 @@
+	a{
+		text-decoration: none;
+		color: #520;
+	}
+
+/* (Most) lists and description lists */
+
+		dd
+		{
+			padding: 0;
+		}
+		dt
+		{
+		/*	float: left; */
+			margin: 0;
+			padding: 0 .5em 0 0;
+		}
+		dt:after
+		{
+			/* visibility: hidden; */
+			clear: left;
+  			content: ":";
+		}
+
+/* Overall structure */
+
+		body
+		{
+			font-family: 'Trebuchet MS', Helvetica, sans-serif;
+			font-size: x-small;
+		}
+		#content
+		{
+		}
+
+/* Quotation */
+		q
+		{
+			display:none;
+		}
+
+/* List of papers */
+
+		#papers
+		{
+			margin-left: 3em;
+		}
+		#papers dt
+		{
+			display:list-item;
+		}
+
+		#papers dt:after
+		{
+			content: "";
+		}
+
+/* Photograph */
+
+		#photograph
+		{
+			float: right;
+			border: 1px solid;
+		}
+		#photograph img
+		{
+			width: 120px;
+			/*-webkit-filter: grayscale(1);
+  			filter: grayscale(1);*/
+			-webkit-filter: blur(4px);
+			filter: blur(4px);
+		}
+
+/* WIP notice */
+		.notice
+		{
+			display: none;
+		}
+
+		input
+		{
+			display: none;
+		}
+

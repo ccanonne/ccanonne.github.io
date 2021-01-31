@@ -1,0 +1,95 @@
+
+/* (Most) lists and description lists */
+
+		dd
+		{
+			padding: 0;
+		}
+		dt
+		{
+		/*	float: left; */
+			margin: 0;
+			padding: 0 .5em 0 0;
+		}
+		dt:after
+		{
+			/* visibility: hidden; */
+			clear: left;
+  			content: ":";
+		}
+
+/* Overall structure */
+
+		body
+		{
+			margin-left: 4em;
+			margin-right: 4em;
+			font-family: 'Trebuchet MS', Helvetica, sans-serif;
+			font-size:small;
+		}
+		#content
+		{
+		}
+
+		#sec-contact, #sec-about, #sec-research, #sec-teaching, #sec-papers, #sec-misc, #sec-survey, #sec-service
+		{
+			border: 1px solid;
+			padding: 1em;
+		}
+
+/* Quotation */
+		q
+		{
+			font-style: italic;
+		}
+		q span
+		{
+			font-family: Georgia;
+		}
+		q:before { content: ''; }
+		q:after { content: &#8221;; }
+
+/* List of papers */
+
+		#papers
+		{
+			margin-left: 3em;
+		}
+		#papers dt
+		{
+			display:list-item;
+		}
+
+		#papers dt:after
+		{
+			content: "";
+		}
+
+/* Photograph */
+
+		#photograph
+		{
+			float: right;
+			border: 1px solid;
+			border-radius: 3px;
+			padding: 3px; padding-bottom: 0px;
+			background-color: white;
+		}
+		#photograph img
+		{
+			width: 120px;
+		}
+
+/* WIP notice */
+		.notice
+		{
+		/*	font-family: Georgia; */
+			color: #8b0000;
+		}
+
+	        mark
+        	{
+                	background-color: rgba(1,1,1,0);
+               		font-weight: bold;
+        	}
+
