@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Cl&#233;ment Canonne | Publications</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/a7bd35d6e3.js" crossorigin="anonymous"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        
+        <!-- Bootstrap -->
+<!--        <link href="css/bootstrap.min.css" rel="stylesheet"/> -->
+	      <link href="css/bootstrap.css" rel="stylesheet"/>
+	      
+	      <!-- Bibliography -->
+	      <style type="text/css">
+	        .bibbase_stats_paper
+	        {
+	          display: none;
+	        }
+	        .dontprint
+	        {
+	          display: none;
+	        }
+	        .bibbase_paper_author a
+	        {
+	          color: midnightblue;
+	        }
+	        
+	        .note
+	        {
+	            /* mimicks label label-success from bootstrap.css */
+	            background-color: #5cb85c;
+	            display: inline;
+              padding: .2em .6em .3em;
+              font-size: 75%;
+              font-weight: bold;
+              line-height: 1;
+              color: #ffffff;
+              text-align: center;
+              white-space: nowrap;
+              vertical-align: baseline;
+              border-radius: .25em;
+	        }
+	        .note:empty
+	        {
+	          display: none;
+	        }
+	        
+          #group_inproceedings div.bibbase_group i+span { display: none; }
+          #group_mastersthesis div.bibbase_group i+span { display: none; }
+          #group_phdthesis div.bibbase_group i+span { display: none; }
+          #group_techreport div.bibbase_group i+span { display: none; }
+          #group_unpublished div.bibbase_group i+span { display: none; }
+          #group_incollection div.bibbase_group i+span { display: none; }
+
+          #manuscript span.bibbase_paper_title a:before { content: "📝" }
+          #conference span.bibbase_paper_title a:before { content: "📘" }
+          #journal span.bibbase_paper_title a:before { content: "📗" }
+          #surveys span.bibbase_paper_title a:before { content: "📙" }
+          span.bibbase_paper_title a { color:black; font-weight: bold; }
+	      </style>
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index"  onload="document.body.innerHTML = document.body.innerHTML.replace(/\\emph/g, '');" > <!-- Hack to handle \emph in BibTex notes -->
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Home<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html">Main</a></li>
+                                <li><a href="index.html#intro">Introduction</a></li>
+                                <li><a href="index.html#news">News</a></li>
+                                <!-- <li><a href="bio.html">Biography</a></li> -->
+                                <!-- <li><a href="cv.html">CV (Web)</a></li> -->
+                                <li><a target="_blank" href="cv/cv_clement_canonne.pdf">CV (PDF)</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Publications<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#conference">Conference</a></li>
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#journal">Journal</a></li>
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#surveys">Books and surveys</a></li>
+                            </ul>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="index.html#service">Service</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="index.html#advising">Advising</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+        </section>
+<!------------------------------------------------------------------------------------------------------------------------------>      
+<!------------------------------------------------------------------------------------------------------------------------------> 
+<!-- Home Section -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <h1>Research papers</h1>
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        <p class="lead">
+                        Each list is in reverse chronological order. 
+                        Unless explicitly specified otherwise, authorships are in alphabetical order, as is customary in theoretical computer science.
+                        </p>
+                        <p>
+		                <a class="label label-primary" target="_blank" href="https://orcid.org/0000-0001-7153-5211">ORCID</a>
+		                <a class="label label-warning" target="_blank" href="https://scholar.google.com.au/citations?user=gjLr_FgAAAAJ">Google Scholar</a>
+		                <a class="label label-danger" target="_blank" href="https://dblp.uni-trier.de/pid/28/9840L.html">DBLP</a>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- Manuscripts papers -->
+        <section  name="manuscript" id="manuscript">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        <!-- -->
+                        <h2>Manuscripts</h2>
+                            <script src="https://bibbase.org/show?bib=https%3A%2F%2Fccanonne.github.io%2Fcv%2Fpublications-manuscript.bib&jsonp=1&hidemenu=true&sort=title"></script>
+                        <!-- -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Conference papers -->
+        <section  name="conference" id="conference">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        <!-- -->
+                        <h2>Conference papers</h2>
+                            <script src="https://bibbase.org/show?bib=https%3A%2F%2Fccanonne.github.io%2Fcv%2Fpublications-conf.bib&jsonp=1&hidemenu=true&sort=title"></script>
+                        <!-- -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+            
+        <!-- Journal papers -->
+        <section  name="journal" id="journal">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        <!-- -->
+                        <h2>Journal papers</h2>
+                            <script src="https://bibbase.org/show?bib=https%3A%2F%2Fccanonne.github.io%2Fcv%2Fpublications-journal.bib&jsonp=1&hidemenu=true&sort=title"></script>
+                        <!-- -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Books and surveys -->
+        <section  name="surveys" id="surveys">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        <!-- -->
+                        <h2>Books and surveys</h2>
+                            <script src="https://bibbase.org/show?bib=https%3A%2F%2Fccanonne.github.io%2Fcv%2Fpublications-techreport.bib&jsonp=1&hidemenu=true&sort=title"></script>
+                        <!-- -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <hr class="star-primary">
+            <footer>
+                <small>
+                    <center>
+                        © 2016 | D. Zeinalipour. Credits: AR template
+                        <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                        <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                            <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                                https://github.com/dmsl/academic-responsive-template
+                            </a> ]
+                        </div>
+                    </center>
+                </small>
+            </footer>
+            
+        </body>
+        
+        </html>

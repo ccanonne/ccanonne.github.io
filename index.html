@@ -1,231 +1,364 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Cl&#233;ment Canonne's homepage</title>
-		<link rel="stylesheet" type="text/css" media="screen" title="plain" href="indexnone.css" />
-		<link rel="stylesheet" type="text/css" media="print" href="indexprint.css" />
-	</head>
-	<body>
-		<p id="quotation">
-		<q cite="Leonard Cohen ('Who by Fire?')"> <!-- <q>: short quotations (cf. <blockquote for long ones) -->
-					<span>&#8220;A</span>nd who, shall I say, is calling?&#8221;
-				</q>
-				</p>
+    
+    <head>
+        <meta charset="utf-8"/>
+        <title>Cl&#233;ment Canonne's homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/a7bd35d6e3.js" crossorigin="anonymous"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        
+        <!-- Bootstrap -->
+<!--        <link href="css/bootstrap.min.css" rel="stylesheet"/> -->
+	      <link href="css/bootstrap.css" rel="stylesheet"/>
+	      
+	      <!-- Bibliography -->
+	      <style type="text/css">
+	        .bibbase_stats_paper
+	        {
+	          display: none;
+	        }
+	        .dontprint
+	        {
+	          display: none;
+	        }
+	        .bibbase_paper_author a
+	        {
+	          color: midnightblue;
+	        }
+	        
+	        .note
+	        {
+	            /* mimicks label label-success from bootstrap.css */
+	            background-color: #5cb85c;
+	            display: inline;
+              padding: .2em .6em .3em;
+              font-size: 75%;
+              font-weight: bold;
+              line-height: 1;
+              color: #ffffff;
+              text-align: center;
+              white-space: nowrap;
+              vertical-align: baseline;
+              border-radius: .25em;
+	        }
+	        .note:empty
+	        {
+	          display: none;
+	        }
+	        
+          #group_inproceedings div.bibbase_group i+span { display: none; }
+          #group_mastersthesis div.bibbase_group i+span { display: none; }
+          #group_phdthesis div.bibbase_group i+span { display: none; }
+          #group_techreport div.bibbase_group i+span { display: none; }
+          #group_unpublished div.bibbase_group i+span { display: none; }
+          #group_incollection div.bibbase_group i+span { display: none; }
 
-				<!-- page content -->
-				<div id="content"> 
+          #manuscript span.bibbase_paper_title a:before { content: "📝" }
+          #conference span.bibbase_paper_title a:before { content: "📘" }
+          #journal span.bibbase_paper_title a:before { content: "📗" }
+          #surveys span.bibbase_paper_title a:before { content: "📙" }
+          span.bibbase_paper_title a { color:black; font-weight: bold; }
+          
+          
+          #group_article div.bibbase_group i+span { display: none; }
+          #group_inproceedings div.bibbase_group i+span { display: none; }
+          #group_mastersthesis div.bibbase_group i+span { display: none; }
+          #group_phdthesis div.bibbase_group i+span { display: none; }
+          #group_techreport div.bibbase_group i+span { display: none; }
+          #group_unpublished div.bibbase_group i+span { display: none; }
+          #group_incollection div.bibbase_group i+span { display: none; }
 
-					<div id="photograph"><img src="pictures/photo.jpg" alt="Picture of me." /></div>
-					<h1 style="text-align:center;">Cl&#233;ment Canonne</h1>
-					<div align="center" class="notice">
-						(Error 418: I'm a teapot.)
-					</div>
-					<h2>Contact information</h2>
-					<div id="sec-contact">
-						<dl>
-							<dt>orcid</dt><dd itemscope itemtype="https://schema.org/Person">
-								<a itemprop="sameAs" content="https://orcid.org/0000-0001-7153-5211" href="https://orcid.org/0000-0001-7153-5211" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;">
-									<img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">https://orcid.org/0000-0001-7153-5211
-								</a>
-							</dd>
-							<dt>e-mail</dt>
-								<dd><a href="mailto:clement.canonne@sydney.edu.au">clement.canonne@sydney.edu.au</a></dd>
-								<!-- <dd><a href="mailto:ccanonne@cs.columbia.edu">ccanonne@cs.columbia.edu</a></dd> -->
-							<dt>Mailing address</dt><br />
-							<dd>
-							<address>
+          #group_article div.bibbase_group i:after { content: " Journal Articles" }
+          #group_inproceedings div.bibbase_group i:after { content: " Conference" }
+          #group_mastersthesis div.bibbase_group i:after { content: " Master's Thesis" }
+          #group_phdthesis div.bibbase_group i:after { content: " PhD Thesis" }
+          #group_techreport div.bibbase_group i:after { content: " Technical Report" }
+          #group_unpublished div.bibbase_group i:after { content: " Manuscript" }
+          #group_incollection div.bibbase_group i:after { content: " In Collection" }
+          
+          
+	      </style>
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- http://getbootstrap.com/customize/ change "@screen-sm" -> "@screen-md" in @grid-float-breakpoint -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/menucollapse.js"></script>
+        <script type="text/javascript" src="js/arrow78.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    </head>
+    
+    <body id="page-top" class="index">
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                    <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Home<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-intro-content').show();" href="#intro">Introduction</a></li>
+                                <!-- <li><a href="bio.html">Biography</a></li> -->
+                                <!-- <li><a href="cv.html">CV (Web)</a></li> -->
+                                <li><a target="_blank" href="cv/cv_clement_canonne.pdf">CV (PDF)</a></li>
+                            </ul>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-news-content').show();" href="#news">News</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Publications<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a onclick="javascript:reset_menus();$('#tab-publications-content').show();" href="#publications">Selected</a></li>
+                                <li><a href="publications.html">All</a></li>
+                            </ul>
+                        </li>
+<!--
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-awards-content').show();" href="#awards">Awards</a>
+                        </li>
+-->
+<!--
+                        <li class="page-scroll">
+                            <a href="talks/">Talks</a>
+                        </li>
+-->
+<!--
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-courses-content').show();" href="#courses">Courses</a>
+                        </li>
+-->
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-service-content').show();" href="#service">Service</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-advising-content').show();" href="#advising">Advising</a>
+                        </li>
+<!-- 
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#tab-contact-content').show();" href="#contact">Contact</a>
+                        </li>
+-->
+                        <li class="page-scroll">
+                            <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                
+                <!-- search box submenu -->
+                <div class="collapse" id="bs-example-navbar-collapse-2">
+                    <gcse:search></gcse:search>
+                        </div>
+                
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <section>
+            <!-- Place this tag where you want the search results to render -->
+            <gcse:searchresults-only></gcse:searchresults-only>
+        </section>
+<!------------------------------------------------------------------------------------------------------------------------------>      
+<!------------------------------------------------------------------------------------------------------------------------------>      
+        <!-- Home Section -->
+        <section  name="home" id="home" style="margin-top:40px">
+            <div class="container">
+                <div align="left" class="col-md-3">
+                        <img id="mobile-img" src="images/photo.jpg" width="200" border="0" height="250" alt="">
+                </div>
+                <div align="left" class="col-md-4">
+                    <h2>Cl&#233;ment Canonne
+                    </h2>
+                    
+                    <h4>Lecturer, <em>School of Computer Science</em><br />
+                        The University of Sydney</a>
+                        <dt>email</dt>
+                        <dd><script language="JavaScript">
+                            <!--
+                            document.write("&nbsp;");
+                            c);
+                            -->
+                            </script>
+                        </dd>
+                        <dt>address</dt>
+                        <address>
 								J12 &mdash; School of Computer Science Building<br />
 								Room 426<br />
 								The University of Sydney<br />
 								NSW 2006 Australia
-							</address>
-							</dd>
-						</dl>
-					</div>
+			</address>
+                    </h4>
+                </div>
+                
+               
+                <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+                <b class="expandshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+                </b>
+                <b class="collapseshow" style="display:none;" id="tab-1">
+                    <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+                </b>
+                
+            </div>
+        </section>
+        
+        <!-- Home Section -->
+        <section name="intro" id="intro">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    <!--<h2>Welcome!</h2>-->
+                    
+                    <b class="noshow" style="display:none;" id="tab-1">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-intro-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-intro-content">
+                        <hr class="star-primary">
+                        
+                        <p class="lead">
+                        I am a <a href="https://en.wikipedia.org/wiki/List_of_academic_ranks#Australia">Lecturer</a> in the <a href="https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html">School of Computer Science of the University of Sydney</a>. Prior to that, I was a postdoc first in the Stanford <a href="http://theory.stanford.edu/">Theory Group</a>, then at <a href="https://www.research.ibm.com/labs/almaden/">IBM Research Almaden</a>. Even prior to that, I obtained my Ph.D. from the <a href="http://www.cs.columbia.edu">Computer Science</a> department of Columbia University, where I was advised by <a href="http://www.cs.columbia.edu/~rocco/">Prof. Rocco Servedio</a>. Long ago, in a distant land, I received a M.Sc. in Computer Science from the <a href="http://wikimpri.dptinfo.ens-cachan.fr">Parisian Master of Research in Computer Science</a>, and an engineering degree from one of France's "Grand Schools," the <a href="http://www.ecp.fr/">&#201;cole Centrale Paris</a>.
+                        </p>
+                        <p>
+                        My main areas of study are <strong>distribution testing</strong> (and, broadly speaking, property testing), <strong>learning theory</strong>, and, more generally, randomised algorithms and the <strong>theory of machine learning</strong>. One of my current focuses is on understanding the computational aspects of learning and statistical inference subject to various resource or information constraints. Another, not quite disjoint from the first, lies in reliable and rigorous approaches to data privacy, specifically <strong>differential privacy</strong>.
+                        </p>
+                        
+                        
+                        <p>
+		                <!--<a class="label label-default" href="bio.html">Biography &raquo;</a>-->
+		                <a class="label label-primary" href="assets/cv_clement_canonne.pdf">CV (PDF)&raquo;</a>
+		                <a class="label label-warning" target="_blank" href="https://orcid.org/0000-0001-7153-5211">ORCID</a>
+		                <a class="label label-warning" target="_blank" href="https://scholar.google.com.au/citations?user=gjLr_FgAAAAJ">Google Scholar</a>
+		                <a class="label label-warning" target="_blank" href="https://dblp.uni-trier.de/pid/28/9840L.html">DBLP</a>
+		                <a class="label label-danger" target="_blank" href="https://twitter.com/ccanonne_">Twitter</a>
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+	
+	<!-- News Section -->
+            <section  name="news"  id="news">
+                <div class="container lead">
+                    <div style="text-align: left; margin-top:10px" class="col-md-12">
+                        
+                        <b class="noshow" style="display:none;" id="tab-2">
+                            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-news-content').toggle();">News  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                        </b>
+                        <b class="allshow" style="display:none;" id="tab-news-content">
+                            
+                            <hr class="star-primary">
+                            
+                            <h2>News</h2>
+                            <ul>
+                            	<li>I am currently looking for graduate students! Please see <a href=#advising>here</a> for more details.</li>
+                            	<li>I will be social chair for the <a href="http://acm-stoc.org/stoc2021/">TheoryFest at STOC'21</a>.</li>
+                            </ul>
+                        </b>
+                    </div>
+                </div>
+        </section>
+        
+        <!-- Research Section -->
+        <section  name="publications" id="publications">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-3">
+                        <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-publications-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-publications-content">
+                        <hr class="star-primary">
+                        <!-- -->
+                        <h2>Selected Publications <a href="publications.html" class="btn btn-primary">All Publications&raquo;</a></h2>
+                        <script src="https://bibbase.org/show?bib=https%3A%2F%2Fccanonne.github.io%2Fcv%2Fpublications-selected.bib&jsonp=1&theme=dividers&fullnames=1&sort=-year&groupby=type&nocache=0"></script>
+                        <!-- -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+ 
+         <!-- Awards Section -->
+         <!--
+         <section  name="awards" id="awards">
+             <div class="container lead">
+                 <div style="text-align: left; margin-top:10px" class="col-md-12">
+                     
+                     <b class="noshow" style="display:none;" id="tab-6">
+                         <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-awards-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                     </b>
+                     <div class="allshow" style="display:none;" id="tab-awards-content">
+                         
+                         <hr class="star-primary">
+                         <h2>Awards and Honors</h2>
+                         <ul>
+                             <li>
+                                 <span class="label label-success">something</span> <a target="_blank" href="somewhere">Best of Something YEAR</a>,  ``Some title'', etc..</span>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+         </section>
+         -->
 
-					<h2>About me</h2>
-					<div id="sec-about">
-						<p>I am a Lecturer in the <a href="https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html">School of Computer Science of the University of Sydney</a>. Prior to that, I was a postdoc first in the Stanford <a href="http://theory.stanford.edu/">Theory Group</a>, then at <a href="https://www.research.ibm.com/labs/almaden/">IBM Research Almaden</a>. Even prior to that, I obtained my Ph.D. from the <a href="http://www.cs.columbia.edu">Computer Science</a> department of Columbia University, where I was advised by <a href="http://www.cs.columbia.edu/~rocco/">Prof. Rocco Servedio</a>. Long ago, in a distant land, I received a M.Sc. in Computer Science from the <a href="http://wikimpri.dptinfo.ens-cachan.fr">Parisian Master of Research in Computer Science</a>, and an engineering degree from one of France's "Grand Schools," the <a href="http://www.ecp.fr/">Ecole Centrale Paris</a>.</p>
-					I am currently looking for graduate students! If you are an undergraduate or masters student interested in the theory of machine learning, <span class="tooltip"><span class="tooltiptext">See my research interests below</span>broadly construed</span>, please <a href="mailto:clement.canonne@sydney.edu.au">contact me</a>.
-					</div>
+<!-- 
+        <!-- Courses Section
+        <section  name="courses" id="courses">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-5">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-courses-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-courses-content">
+                        <hr class="star-primary">
+                        <h2>Courses <a href="cv.html#SECTION000110000000000000000" class="btn btn-primary">More &raquo;</a></h2>
+                        <ul>
+                            <li><span class="label label-success">COMS E6232</span> Analysis of Algorithms, II (Teaching Assistant), Spring 2017 </li>
+                            <li><span class="label label-default">CSORW 4231-2</span> Analysis of Algorithms, I (Teaching Assistant), Fall 2016</li>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-					<h2>Research Interests</h2>
-					<div id="sec-research">
-						My main areas of study are property testing (with a focus on distribution testing), learning theory, and, more generally, randomized algorithms and the theory of machine learning. One of my current focuses is on understanding the computational aspects of learning and statistical inference subject to various resource or information constraints. Another, not quite disjoint from the first, lies in reliable and rigorous approaches to data privacy, specifically differential privacy.
-					</div>
-					<h2>Papers</h2>
-					<div id="sec-papers">
-					<em>Unless explicitly specified otherwise, authorships are in alphabetical order, as is customary in theoretical computer science.</em>
-						<dl id="papers">
-							<dt>General lower bounds for interactive high-dimensional estimation under information constraints ([<a href="https://arxiv.org/abs/2010.06562">arXiv:2010.06562</a>])</dt>
-							  <dd>J. Acharya, C. Canonne, and H. Tyagi</dd>
-                                                          <dd><em>Manuscript, 2020.</em></dd>
-							<dt>Interactive Inference under Information Constraints ([<a href="https://arxiv.org/abs/2007.10976">arXiv:2007.10976</a>])</dt>
-							  <dd>J. Acharya, C. Canonne, Y. Liu, Z. Sun, and H. Tyagi</em></dd>
-                                                          <dd><em>Manuscript, 2020.</em></dd>
-							<dt>Robust quantum minimum finding with an application to hypothesis selection ([<a href="https://arxiv.org/abs/2003.11777">arXiv:2003.11777</a>])</dt>
-							  <dd>Y. Quek, C. Canonne, and P. Rebentrost <em>(Contribution order)</em></dd>
-                                                          <dd><em>Manuscript, 2020.</em></dd>
-							<dt>Random Restrictions of High-Dimensional Distributions and Uniformity Testing with Subcube Conditioning ([<a href="https://arxiv.org/abs/1911.07357">arXiv:1911.07357</a>, <a href="https://eccc.weizmann.ac.il/report/2019/165/">ECCC TR19-165</a>], [<a href="files/talks/subcube-conditional-2019-12-17-irif.pdf">slides</a>])</dt>
-							  <dd>C. Canonne, X. Chen, G. Kamath, A. Levi, and E. Waingarten</dd>
-                                                          <dd><em>32nd ACM-SIAM Symposium on Discrete Algorithms (SODA), 2021.</em></dd>
-							<dt><a href="https://proceedings.neurips.cc/paper/2020/hash/b53b3a3d6ab90ce0268229151c9bde11-Abstract.html">The Discrete Gaussian for Differential Privacy</a> ([<a href="https://arxiv.org/abs/2004.00010">arXiv:2004.000010</a>, <a href="https://github.com/IBM/discrete-gaussian-differential-privacy">code</a>])</dt>
-							  <dd>C. Canonne, G. Kamath, and T. Steinke</dd>
-                                                          <dd><em>Advances in Neural Information Processing Systems 33 (NeurIPS), 2020.</em></dd>
-							  <dd><em>Presented at the CCS 2020 Workshop on Theory and Practice of Differential Privacy (TPDP 2020).</em></dd>
-							<dt><a href="https://proceedings.neurips.cc/paper/2020/hash/72b32a1f754ba1c09b3695e0cb6cde7f-Abstract.html">Private Identity Testing for High-Dimensional Distributions</a> ([<a href="https://arxiv.org/abs/1905.11947">arXiv:1905.11947</a>])</dt>
-							  <dd>C. Canonne, G. Kamath, A. McMillan, J. Ullman, and L. Zakynthinou</dd>
-                                                          <dd><em>Advances in Neural Information Processing Systems 33 (NeurIPS), 2020 <mark>(Spotlight)</mark>.</em></dd>
-							  <dd><em>Presented at the CCS 2019 Workshop on Theory and Practice of Differential Privacy (TPDP 2019), and accepted to the Privacy in Machine Learning (PriML) workshop of NeurIPS 2019.</em></dd>
-							<dt><a href="https://drops.dagstuhl.de/opus/volltexte/2020/12627/">Testing Data Binnings</a> ([<a href="https://arxiv.org/abs/2004.12893">arXiv:2004.12893</a>, <a href="https://eccc.weizmann.ac.il/report/2020/062/">ECCC TR20-062</a>])</dt>
-							  <dd>C. Canonne and K. Wimmer</dd>
-                                                          <dd><em>24th International Conference on Randomization and Computation (RANDOM), 2020.</em></dd>
-							<dt><a href="http://proceedings.mlr.press/v125/acharya20b.html">Distributed Signal Detection under Communication Constraints</a> ([<a href="https://www.youtube.com/watch?v=SmklN8PHrkQ">video</a>])</dt>
-							  <dd>J. Acharya, C. Canonne, and H. Tyagi</dd>
-							  <dd><em>33rd Annual Conference on Learning Theory (COLT), 2020.</em></dd>
-							<dt><a href="http://proceedings.mlr.press/v125/acharya20a.html">Domain Compression and its Application to Randomness-Optimal Distributed Goodness-of-Fit</a> ([<a href="https://arxiv.org/abs/1907.08743">arXiv:1907.08743</a>],[<a href="https://eccc.weizmann.ac.il/report/2019/098/">ECCC TR19-098</a>], [<a href="files/talks/distributedidentitytestingtradeoffs-2019-07-20-wola.pdf">slides</a>])</dt>
-							  <dd>J. Acharya, C. Canonne, Y. Han, Z. Sun, and H. Tyagi</dd>
-							  <dd><em>33rd Annual Conference on Learning Theory (COLT), 2020.</em></dd>
-							<dt><a href="https://arxiv.org/abs/1907.01619">Learning from satisfying assignments under continuous distributions</a></dt>
-							  <dd>C. Canonne, A. De, and R. Servedio</dd>
-							  <dd><em>31st ACM-SIAM Symposium on Discrete Algorithms (SODA), 2020.</em></dd>
-							<dt><a href="https://conferences.computer.org/focs/2019/pdfs/FOCS2019-7pBwCpNH4Mz2L4MJWVl6Xp/5f6qMDluQwlh4Pag7dwdTz/3WecRvLphTW1dqcU7NgXDM.pdf">Finding monotone patterns in sublinear time</a> [<a href="https://arxiv.org/abs/1910.01749">arXiv:1910.01749</a>, <a href="https://eccc.weizmann.ac.il/report/2019/134/">ECCC TR19-134</a>]</dt>
-							  <dd>O. Ben-Eliezer, C. Canonne, S. Letzter, and E. Waingarten</dd>
-							  <dd><em>60th Annual Symposium on Foundations of Computer Science (FOCS), 2019.</em></dd>
-							  <dd>Featured in <a href="http://www.wisdom.weizmann.ac.il/~oded/MC/277.html">Oded Goldreich's Choices</a>.</dd>
-							<dt><a href="https://arxiv.org/abs/2101.07981">Inference under Information Constraints III: Local Privacy Constraints</a></dt>
-							  <dd>J. Acharya, C. Canonne, C. Freitag, Z. Sun, and H. Tyagi</dd>
-							  <dd><em>IEEE Journal on Selected Areas in Information Theory (JSAIT), Special Issue on Privacy and Security of Information Systems, 2021.</em> (To appear)</dd>
-							  <dd>Journal version of the AISTATS'19 paper below, <em>Test without Trust: Optimal Locally Private Distribution Testing</em>, which it extends and supersedes.</dd>
-							<dt><a href="https://arxiv.org/abs/1905.08302">Inference under Information Constraints II: Communication Constraints and Shared Randomness</a> ([<a href="files/talks/distributed-2018-04-13-google.pdf">slides</a>])</dt>
-							  <dd>J. Acharya, C. Canonne, and H. Tyagi</dd>
-							  <dd><em>IEEE Transactions on Information Theory, <strong>66</strong>(12), 2020.</em></dd>
-							  <dd>Conference version in <em>2019 International Conference on Machine Learning (ICML), 2019.</em> <mark>(Long oral.)</mark></dd>
-							  <dd>See also the preprint <em>Distributed Simulation and Distributed Inference</em> ([<a href="https://arxiv.org/abs/1804.06952">arXiv:1804:06952</a>,<a href="https://eccc.weizmann.ac.il/report/2018/079/">ECCC TR18-079</a>]), a preliminary but somewhat different version of this work.</dd>
-							<dt><a href="https://arxiv.org/abs/1812.11476">Inference under Information Constraints I: Lower Bounds from Chi-Square Contraction</a> ([<a href="https://www.youtube.com/watch?v=FwBrqJEhDJE">video</a>], [<a href="files/talks/informationconstraints-2018-11-27-simons.pdf">slides</a>])</dt>
-							  <dd>J. Acharya, C. Canonne, and H. Tyagi</dd>
-							  <dd><em>IEEE Transactions on Information Theory, <strong>66</strong>(12), 2020.</em></dd>
-							  <dd>Conference version in <em>32nd Annual Conference on Learning Theory (COLT), 2019.</em></dd>
-							  <dd>See also the <a href="https://www.youtube.com/watch?v=EXDaOX1_C1M">video</a> of the talk given by H. Tyagi on the <a href="http://eceweb1.rutgers.edu/~csi/Shannon.html">Shannon Channel</a>.</dd>
-							<dt><a href="https://arxiv.org/abs/1811.11148">The Structure of Optimal Private Tests for Simple Hypotheses</a></dt>
-							  <dd>C. Canonne, G. Kamath, A. McMillan, A. Smith, and J. Ullman</dd>
-							  <dd><em>51st ACM Symposium on Theory of Computing (STOC), 2019.</em></dd>
-							<dt><a href="https://arxiv.org/abs/1808.02174">Test without Trust: Optimal Locally Private Distribution Testing</a></dt>
-							  <dd>J. Acharya, C. Canonne, C. Freitag, and H. Tyagi</dd>
-							  <dd><em>22nd International Conference on Artificial Intelligence and Statistics (AISTATS), 2019.</em></dd>
-							  <dd><em>Presented at the 2018 Workshop on Theory and Practice of Differential Privacy (TPDP 2018).</em></dd>
-							<dt><a href="https://papers.nips.cc/paper/8210-testing-for-families-of-distributions-via-the-fourier-transform">Testing for Families of Distributions via the Fourier Transform</a> ([<a href="https://arxiv.org/abs/1706.05738">arXiv:1706:05738</a>, [<a href="https://eccc.weizmann.ac.il/report/2017/075/">ECCC TR17-075</a>], [<a href="files/talks/ksiirvs-2017-11-09-stanford.pdf">slides</a>])</dt>
-							  <dd>C. Canonne, I. Diakonikolas, and A. Stewart</dd>
-							  <dd><em>Advances in Neural Information Processing Systems 31 (NeurIPS), 2018.</em></dd>
-							<dt><a href="https://arxiv.org/abs/1711.11560">Testing Conditional Independence of Discrete Distributions</a> ([<a href="files/talks/conditionalindependence-2018-01-12-toca-sv-2018.pdf">slides</a>])</dt>
-							  <dd>C. Canonne, I. Diakonikolas, D. Kane, and A. Stewart</dd>
-							  <dd><em>50th ACM Symposium on Theory of Computing (STOC), 2018.</em></dd>
-							<dt><a href="https://arxiv.org/abs/1710.10660">Improved Bounds for Testing Forbidden Order Patterns</a></dt>
-							  <dd>O. Ben-Eliezer and C. Canonne</dd>
-							  <dd><em>29th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), 2018.</em></dd>
-							<dt><a href="http://arxiv.org/abs/1607.03938">Tolerant Junta Testing and the Connection to Submodular Optimization and Function Isomorphism</a> ([<a href="http://eccc.hpi-web.de/report/2016/105/">ECCC TR16-105</a>])</dt>
-							  <dd>E. Blais, C. Canonne, T. Eden, A. Levi, and D. Ron</dd>
-							  <dd><em>ACM Transactions on Computation Theory (TOCT), <strong>11</strong>(4), 2019</em>.</dd>
-							  <dd>Conference version in <em>29th Annual ACM-SIAM Symposium on Discrete Algorithms (SODA), 2018.</em></dd>
-							<dt><a href="https://arxiv.org/abs/1708.04696">Generalized Uniformity Testing</a> ([<a href="files/talks/generalizeduniformity-2017-10-17-focs.pdf">slides</a>], <a href="https://vimeo.com/241953738" target="_blank">[video]</a>)</dt>
-							  <dd>T. Batu and C. Canonne</dd>
-							  <dd><em>58th Annual Symposium on Foundations of Computer Science (FOCS), 2017.</em></dd>
-							<dt><a href="http://drops.dagstuhl.de/opus/volltexte/2017/7536/">Distribution Testing Lower Bounds via Reductions from Communication Complexity</a> ([<a href="http://eccc.hpi-web.de/report/2016/168/">ECCC TR16-168</a>], [<a href="files/talks/distributionlbcc-2016-12-08-lse.pdf">slides</a>])</dt>
-							  <dd>E. Blais, C. Canonne, and T. Gur</dd>
-							  <dd><em>ACM Transactions on Computation Theory (TOCT), <strong>11</strong>(2), 2019.</em></dd>
-							  <dd>Conference version in <em>Computational Complexity Conference (CCC), 2017.</em></dd>
-							  <dd>Featured in <a href="http://www.wisdom.weizmann.ac.il/~oded/MC/210.html">Oded Goldreich's Choices</a>.</dd>
-							<dt>An Adaptivity Hierarchy Theorem for Property Testing  ([<a href="http://eccc.hpi-web.de/report/2017/029/">ECCC TR17-029</a>, <a href="https://arxiv.org/abs/1702.05678">arXiv:1702.05678</a>], [<a href="files/talks/pt-adaptivity-2017-04-05-mit.pdf">slides</a>])</dt>
-							  <dd>C. Canonne and T. Gur</dd>
-							  <dd><em>computational complexity, <strong>27</strong>(4), 2018</em>.</dd>
-							  <dd>Conference version in <em>Computational Complexity Conference (CCC), 2017.</em></dd>
-							<dt><a href="https://arxiv.org/abs/1612.03156">Testing Bayesian Networks</a></dt>
-							  <dd>C. Canonne, I. Diakonikolas, D. Kane, and A. Stewart</dd>
-							  <dd><em>IEEE Transactions on Information Theory, <strong>66</strong>(5), 2020.</em></dd>
-							  <dd>Conference version in <em>30th Annual Conference on Learning Theory (COLT), 2017.</em></dd>
-							<dt><a href="http://arxiv.org/abs/1609.00265">Testing k-Monotonicity: the Rise and Fall of Boolean Functions</a> ([<a href="http://eccc.hpi-web.de/report/2016/136/">ECCC TR16-136</a>], [<a href="files/talks/kmonotonetesting-2016-05-16-uwaterloo.pdf">slides</a>])</dt>
-							  <dd>C. Canonne, E. Grigorescu, S. Guo, A. Kumar, and K. Wimmer</dd>
-							  <dd><em>Theory of Computing, <strong>15</strong>(1), 2019.</em></dd>
-							  <dd>Conference version in <em>8th Innovations in Theoretical Computer Science (ITCS), 2017.</em></dd>
-							<dt><a href="https://epubs.siam.org/doi/abs/10.1137/16M1076666">Sampling Correctors</a> (<a href="http://arxiv.org/abs/1504.06544">[arXiv:1504.06544</a>], [<a href="files/talks/samplecorrectors-2016-01-14-itcs.pdf">slides</a>])</dt>
-							  <dd>C. Canonne, T. Gouleakis, and R. Rubinfeld</dd>
-							  <dd><em>SIAM Journal on Computing (SICOMP), <strong>47</strong>(4), 2018.</em></dd>
-							  <dd>Conference version in <em>7th Innovations in Theoretical Computer Science (ITCS), 2016.</em></dd>
-							<dt>Are Few Bins Enough: Testing Histogram Distributions ([<a href="http://eccc.hpi-web.de/report/2015/160/">ECCC TR15-160</a>], [<a href="files/talks/khistograms-2016-06-29-pods.pdf">slides</a>])</dt>
-							  <dd>C. Canonne</dd>
-							  <dd><em>35th ACM Symposium on Principles of Database Systems (PODS), 2016.</em></dd>
-							<dt><a href="http://arxiv.org/abs/1507.03558">Testing Shape Restrictions of Discrete Distributions</a></dt>
-							  <dd>C. Canonne, I. Diakonikolas, T. Gouleakis, and R. Rubinfeld</dd>
-							  <dd><em>33rd International Symposium on Theoretical Aspects of Computer Science (STACS), 2016.</em></dd>
-                                                          <dd><mark>Invited to the <em>Theory of Computing Systems</em> Special Issue for STACS 2016.</mark></dd>
-							  <dd>Featured in the <a href="https://mittheory.wordpress.com/2015/08/09/distribution-testing-do-it-with-class/">MIT Theory of Computation Student Blog</a>.</dd>
-							<dt><a href="http://arxiv.org/abs/1410.8420">Learning circuits with few negations</a> ([<a href="http://eccc.hpi-web.de/report/2014/144/">ECCC TR14-144</a>], [<a href="files/talks/kmonotone-2015-08-26-random.pdf">slides</a>])</dt>
-							  <dd>E. Blais, C. Canonne, I. Oliveira, R. Servedio, and L.-Y. Tan</dd>
-							  <dd><em>19th International Workshop on Randomization and Computation (RANDOM), 2015.</em></dd>
-							<dt><a href="http://arxiv.org/abs/1411.7346">A Chasm Between Identity and Equivalence Testing with Conditional Queries</a> ([<a href="http://eccc.hpi-web.de/report/2014/156/">ECCC TR14-156</a>], [<a href="files/talks/chasmcond-2015-08-24.pdf">slides</a>])</dt>
-							  <dd>J. Acharya, C. Canonne, and G. Kamath</dd>
-							  <dd><em>19th International Workshop on Randomization and Computation (RANDOM), 2015.</em></dd>
-							  <dd><em>Theory of Computing, <strong>14</strong>(19), 2018.</em></dd>
-							  <dd>Featured in <a href="http://www.wisdom.weizmann.ac.il/~oded/MC/164.html">Oded Goldreich's Choices</a> and <a href="http://sublinear.info/index.php?title=Open_Problems:66">Sublinear.info</a>.</dd>
-							<dt><a href="http://arxiv.org/abs/1501.06783">Big Data on the Rise: Testing monotonicity of distributions</a> ([<a href="files/talks/monotonedistr-2015-07-07-icalp.pdf">slides</a>])</dt>
-							  <dd>C. Canonne</dd>
-							  <dd><em>42nd International Conference on Automata, Languages and Programming (ICALP), 2015.</em></dd>
-							<dt><a href="files/misc/2015-isit-adaptive-weighted-gt.pdf">Adaptive Estimation in Weighted Group Testing</a></dt>
-							  <dd>J. Acharya, C. Canonne, and G. Kamath</dd>
-							  <dd><em>2015 IEEE International Symposium on Information Theory (ISIT 2015).</em></dd>
-							<dt><a href="http://arxiv.org/abs/1411.3603">Communication with Imperfectly Shared Randomness</a> ([<a href="http://eccc.hpi-web.de/report/2014/153/">ECCC TR14-153</a>], [<a href="files/talks/isr-2014-11-07-columbia.pdf">slides</a>])</dt>
-							  <dd>C. Canonne, V. Guruswami, R. Meka, and M. Sudan</dd>
-							  <dd><em>IEEE Transactions on Information Theory, <strong>63</strong>(10), 2017.</em></dd>
-							  <dd>Conference version in <em>6th Innovations in Theoretical Computer Science (ITCS), 2015.</em></dd>
-							<dt><a href="http://arxiv.org/abs/1402.3835">Testing probability distributions underlying aggregated data</a> ([<a href="http://eccc.hpi-web.de/report/2014/021/">ECCC TR14-021</a>], [<a href="files/talks/extendedaccess-2014-02-07.pdf">slides</a>])</dt>
-							  <dd>C. Canonne and R. Rubinfeld</dd>
-							  <dd><em>41st International Conference on Automata, Languages and Programming (ICALP), 2014.</em></dd>
-							<dt>Testing equivalence between distributions using conditional samples ([<a href="files/talks/cond-2014-01-06-soda.pdf">slides</a>])</dt>
-							  <dd>C. Canonne, D. Ron, and R. Servedio</dd>
-							  <dd><em>25th ACM-SIAM Symposium on Discrete Algorithms (SODA), 2014.</em></dd>
-							<dt><a href="http://epubs.siam.org/doi/abs/10.1137/130945508">Testing probability distributions using conditional samples</a> ([<a href="http://eccc.hpi-web.de/report/2012/155/">ECCC TR12-155</a>], [<a href="http://arxiv.org/abs/1211.2664">arXiv:1211.2664</a>], [<a href="files/talks/cond-2013-03-08.pdf">slides</a>])</dt>
-							  <dd>C. Canonne, D. Ron, and R. Servedio.</dd>
-							  <dd><em>SIAM Journal on Computing (SICOMP), <strong>44</strong>(3), 2015.</em></dd>
-							  <dd>Featured in <a href="http://www.wisdom.weizmann.ac.il/~oded/MC/107.html">Oded Goldreich's Choices</a>.</dd>
-							<!-- `<dd>Extended abstract in <em>ACM-SIAM Symposium on Discrete Algorithms (SODA)</em>, 2014.</dd> -->
-						</dl>
-					</div>
-
-					<h2>Thesis</h2>
-					<div id="sec-thesis">
-						<dl id="thesis">
-							<dt>Property Testing and Probability Distributions: New Techniques, New Models, and New Goals [<a href="http://www.cs.columbia.edu/~ccanonne/files/talks/phdefense-2017-09-18.pdf">slides</a>, <a href="https://github.com/ccanonne/phdthesis/">source</a>, <a href="https://dx.doi.org/10.17605/OSF.IO/RX6ZT">thesis commons</a>]</dt>
-							<dd>Ph.D. Thesis, 2017</dd>
-						</dl>
-					</div>
-
-					<h2>R&#233;sum&#233;</h2>
-					<div id="sec-resume">
-						Here is a link to my <a href="cv/cv_clement_canonne.pdf">r&#233;sum&#233;</a> <i>(updated 01/20/2021)</i>.
-					</div>
-
-					<h2>Service</h2>
-					<div id="sec-service">
-					 	 <ul>
-							<li>Program Committee member:</li>
-								<dd><a href="http://itcs-conf.org/itcs20/itcs20-cfp.html" target="_blank">ITCS 2020</a>, <a href="https://focs2020.cs.duke.edu/" target="_blank">FOCS 2020</a>, <a href="https://www.siam.org/conferences/cm/conference/soda21">SODA 2021</a>, <a href="http://algo2021.tecnico.ulisboa.pt/ESA2021/" target="_blank">ESA 2021 (Track A)</a></dd>
-								<li>Contributor to the <a href="https://differentialprivacy.org/" target="_blank">Differential Privacy website</a>, a hub for the differential privacy research community.</li>
-							<li>Co-organizer of <a href="https://sites.google.com/view/dstheory" target="_blank">Foundations of Data Science Virtual Talk Series</a>, an online seminar series on the theory of data science.</li>
-							<li>Co-organizer of <a href="https://sites.google.com/site/plustcs/" target="_blank">TCS+</a>, an online seminar series in theoretical computer science.</li>
-							<li>Co-editor of the <a href="http://ptreview.sublinear.info/" target="_blank">Property Testing Review</a>.
-							<li><a href="http://www.cs.columbia.edu/~ccanonne/tutorial-focs2020/">Tutorial on "Lower Bounds for Statistical Inference in Distributed and Constrained Settings"</a>  [slides,video]</li>
-								<dd>Co-organized with <a href="https://people.ece.cornell.edu/acharya/" target="_blank">Jayadev Acharya</a> and <a href="https://ece.iisc.ac.in/~htyagi/" target="_blank">Himanshu Tyagi</a> at FOCS'20.</dd>
-							<li><a href="http://www.cs.columbia.edu/~ccanonne/workshop-focs2019/">Workshop on "A TCS Quiver"</a>  [slides]</li>
-								<dd>Co-organized with <a href="http://www.gautamkamath.com/" target="_blank">Gautam Kamath</a> at FOCS'19.</dd>
-							<li><a href="http://www.cs.columbia.edu/~ccanonne/workshop-focs2017/">Workshop on "Frontiers in Distribution Testing"</a>  [slides,video]</li>
-								<dd>Co-organized with <a href="http://www.gautamkamath.com/" target="_blank">Gautam Kamath</a> at FOCS'17.</dd>
-							<li><a href="http://www.cs.columbia.edu/~ccanonne/workshop-focs2016/">Workshop on "(Some) Orthogonal Polynomials and their Applications to TCS"</a> [slides,video]</li>
-								<dd>Co-organized with <a href="http://www.gautamkamath.com/" target="_blank">Gautam Kamath</a> at FOCS'16.</dd>
-						</ul>
-					</div>
-<!--
-					<h2>Teaching</h2>
-					<div id="sec-teaching">
+					<div>
 						<ul>
 							<li>Spring 2017: COMS E6232 &#151; Analysis of Algorithms, II (Teaching Assistant) </li>
 							<li>Fall 2016: CSORW 4231-2 &#151; Analysis of Algorithms, I (Teaching Assistant) </li>
@@ -238,46 +371,163 @@
 						</ul>
 					</div>
 -->
-					<h2>Surveys and expository notes</h2>
-					<div id="sec-survey">
-						<ul>
-							<li><a href="http://theoryofcomputing.org/articles/gs009">A Survey on Distribution Testing: Your Data is Big. But is it Blue?</a> ([<a href="http://eccc.hpi-web.de/report/2015/063/">ECCC TR15-063</a>], [<a href="http://theoryofcomputing.org/articles/gs009/bibliography.html">bib</a>])</li>
-							<dd>Survey. <em>Theory of Computing Library, Graduate Surveys <strong>9</strong>, 2020</em> (DOI: 10.4086/toc.gs.2020.009).</dd>
-							<li><a href="https://github.com/ccanonne/probabilitydistributiontoolbox/blob/master/learning.pdf">A short note on learning discrete distributions</a> [<a href="https://arxiv.org/abs/2002.11457">arXiv:2002:11457</a>]</li>
-							<dd>Technical thingy, 2020.</dd>
-							<li><a href="https://github.com/ccanonne/probabilitydistributiontoolbox/blob/master/poissonconcentration.pdf">A short note on Poisson tail bounds</a></li>
-							<dd>Technical thingy, 2017.</dd>
-							<li><a href="https://github.com/ccanonne/probabilitydistributiontoolbox/blob/master/assouadlemma.pdf">A short note on Assouad and Le Cam's lemmata</a></li>
-							<dd>Technical thingy, 2015.</dd>
-							<li><a href="files/misc/tamingbigdistr-fr.pdf">Dompter les Distributions de Probabilit&#233; G&#233;antes</a> [FR]</li>
-							<dd>Translation of <em>Taming Big Probability Distributions</em>, by Ronitt Rubinfeld (DOI:<a href="http://dl.acm.org/citation.cfm?id=2331042.2331052">10.1145/2331042.2331052</a>).</dd>
-						</ul>
-					</div>	
-					<h2>Miscellaneous</h2>
-					<div id="sec-misc">
-						I like this word. <i>Miscellaneous</i>.
-						<!-- <h3>Other</h3> -->
-						<ul>
-							<li><a href="weeklyquiz.html">Weekly Twitter quiz</a></li>
-							<dd>Theoretical computer science, mathematics, and random nuggets.</dd>
-							<li><a href="files/talks/kmonotonetesting-2016-05-16-uwaterloo.pdf">The Rise and Fall of Boolean Functions</a> [slides]</li>
-							<dd>Presentation given at the University of Waterloo on May 16, 2016.</dd>
-							<li><a href="files/talks/classtesting-2015-10-02-columbia.pdf">Testing Classes of Distributions: General Approaches to Particular Problems</a> [slides]</li>
-							<dd>Presentation given at Columbia University (October 2) and <a href="http://www.lix.polytechnique.fr/" target="_blank">LIX</a> (December 17), 2015.</dd>
-							<li><a href="files/talks/kmonotone-2015-06-23-liafa.pdf">Learning circuits with few negations</a> [slides]</li>
-							<dd>Presentation given at <a href="http://archives.liafa.univ-paris-diderot.fr/" target="_blank">LIAFA</a> on June 23, 2015.</dd>
-							<li><a href="files/talks/isr-2014-11-07-columbia.pdf">Communication with Imperfect Shared Randomness</a> [slides]</li>
-							<dd>Presentation given at Columbia University (November 7), IBM T.J. Watson Research Center (November 19), 2014 (long version of the <a href="files/talks/isr-2015-01-12-itcs.pdf">ITCS'15 talk</a>).</dd>
-							<li><a href="files/talks/extendedaccess-2014-02-07.pdf">Testing probability distributions with more oracles</a> [slides]</li>
-							<dd>Presentation given at Columbia University on February 7, 2014 (long version of the <a href="files/talks/extendedaccess-2014-07-10-icalp.pdf">ICALP'14 talk</a>).</dd>
-							<!--<li><a href="files/talks/cond-2013-03-08.pdf">Testing probability distributions using conditional samples</a> [slides]</li>
-							<dd>Presentation given at Columbia University, NYU Poly, and MIT, 2013.</dd>-->
-						</ul>
-						Occasionally, <a href="http://results.nyrr.org/runner/9029710/overview">I run</a>.
-					</div>
 
-				</div> <!-- content -->
-
-
-			</body>
-		</html>
+        <!-- Service Section -->
+        <section name="service" id="service">
+            
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-7">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-service-content').toggle();">Service  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-service-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Professional Service <!--<a href="cv.html#SECTION00080000000000000000" class="btn btn-primary">More &raquo;</a>--></h2>
+                        <p>
+                        <!--
+                        <span class="label label-success">Editorial Boards</span>
+                        </span>
+                        -->
+                        </p>
+                        
+                        <p>
+                        <span class="label label-success">Conference Committees</span>
+                        <ul>
+                            <li>
+                                European Symposium on Algorithms (ESA):
+                                <a href="http://algo2021.tecnico.ulisboa.pt/ESA2021/" target="_blank">2021</a> (Track A)
+                            </li>
+                            <li>
+                                Innovations in Theoretical Computer Science (ITCS):
+                                <a href="http://itcs-conf.org/itcs20/itcs20-cfp.html" target="_blank">2020</a>
+                            </li>
+                            <li>
+                                International Conference on Randomization and Computation (RANDOM):
+                                <a href="https://randomconference.com/random-2021-home/random-2021-program-committee/" target="_blank">2021</a>
+                            </li>
+                            <li>
+                                Symposium on Discrete Algorithms (SODA):
+                                <a href="https://www.siam.org/conferences/cm/conference/soda21" target="_blank">2021</a>
+                            </li>
+                            <li>
+                                Symposium on Foundations of Computer Science (FOCS):
+                                <a href="https://focs2020.cs.duke.edu/" target="_blank">2020</a>
+                            </li>
+                        </ul>
+                        
+                        <span class="label label-success">Workshops, Tutorials, and Symposia</span>
+                        <ul>
+                            <li>
+                            	<strong>Program Committee:</strong> <a href="https://dp-ml.github.io/2021-workshop-ICLR/">Distributed and Private Machine Learning (DPML)</a>
+                            	<dd>Workshop at ICLR'21.</dd>
+                            </li>
+                            <li>
+                                <strong>Tutorial:</strong>
+                                <a href="http://www.cs.columbia.edu/~ccanonne/tutorial-focs2020/"> "Lower Bounds for Statistical Inference in Distributed and Constrained Settings"</a> <i class="far fa-file-powerpoint"></i>&nbsp;<i class="fa fa-video-camera"></i>
+                                <dd>Co-organized with <a href="https://people.ece.cornell.edu/acharya/" target="_blank">Jayadev Acharya</a> and <a href="https://ece.iisc.ac.in/~htyagi/" target="_blank">Himanshu Tyagi</a> at FOCS'20.</dd>
+                            </li>
+                            <li>
+                                <strong>Workshop:</strong>
+                                <a href="http://www.cs.columbia.edu/~ccanonne/workshop-focs2019/"> "A TCS Quiver"</a> <i class="far fa-file-powerpoint"></i>
+                                <dd>Co-organized with <a href="http://www.gautamkamath.com/" target="_blank">Gautam Kamath</a> at FOCS'19.</dd>
+                            </li>
+                            <li>
+                                <strong>Workshop:</strong>
+                                <a href="http://www.cs.columbia.edu/~ccanonne/workshop-focs2017/"> "Frontiers in Distribution Testing"</a> <i class="far fa-file-powerpoint"></i>&nbsp;<i class="fa fa-video-camera"></i>
+                                <dd>Co-organized with <a href="http://www.gautamkamath.com/" target="_blank">Gautam Kamath</a> at FOCS'17.</dd>
+                            </li>
+                            <li>
+                                <strong>Workshop:</strong>
+                                <a href="http://www.cs.columbia.edu/~ccanonne/workshop-focs2016/">"(Some) Orthogonal Polynomials and their Applications to TCS"</a> <i class="far fa-file-powerpoint"></i>&nbsp;<i class="fa fa-video-camera"></i>
+                                <dd>Co-organized with <a href="http://www.gautamkamath.com/" target="_blank">Gautam Kamath</a> at FOCS'16.</dd>
+                            </li>
+                        </ul>
+                        <span class="label label-success">Organizer</span>
+                        <ul>
+                            <li>Co-organizer of <a href="https://sites.google.com/site/plustcs/" target="_blank">TCS+</a>, an online seminar series in theoretical computer science.</li>
+                            <li>Co-organizer of <a href="https://sites.google.com/view/dstheory" target="_blank">Foundations of Data Science Virtual Talk Series</a>, an online seminar series on the theory of data science.</li>
+                            <li>Co-editor of the <a href="http://ptreview.sublinear.info/" target="_blank">Property Testing Review</a>.
+                            <li>Contributor to the <a href="https://differentialprivacy.org/" target="_blank">Differential Privacy website</a>, a hub for the differential privacy research community.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Advising Section -->
+        <section name="advising" id="advising">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-8">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-advising-content').toggle();">Advising  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    <div class="allshow" style="display:none;" id="tab-advising-content">
+                        <hr class="star-primary">
+                        <h2>Advising</h2>
+                        
+                        I am currently looking for Ph.D. students! If you are an undergrad/masters student with a strong background in algorithms and/or discrete mathematics interested (broadly) in the theoretical aspects of learning, and are keen on spending 3-4 years in one of the world's <a href="https://www.telegraph.co.uk/travel/destinations/oceania/australia/new-south-wales/sydney/articles/sydney-best-city-in-the-world/" target="_blank">best places to live</a>, please <a href="mailto:clement.canonne@sydney.edu.au">contact me</a>, including your CV! The position is fully funded, and involves proving (or trying to) theorems about the fundamental limits and possibilities of learning and testing algorithms, from a computational and statistical perspective. Please check <a href=#publications>my publications</a> for some recent work along these lines. 
+<!--
+                        <ul>
+                            <li>
+                                <span class="label label-success">Postdoc</span> <a target="_blank" href="website">Name</a>, Current position.
+                            </li>
+                            <li>
+                                <span class="label label-success">Ph.D.</span> (completed) <a target="_blank" href="website">Name</a>, Current position. </span>
+                            </li>
+                           <li>
+                                <span class="label label-info">Ph.D.</span> (ongoing) <a target="_blank" href="website">Name</a>, University of Sydney.
+                           </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+-->
+        </section>
+        
+        <!-- Home Section -->
+        <section name="links" id="links">
+            <div class="container lead">
+                <div style="text-align: left; margin-top:10px" class="col-md-12">
+                    
+                    <b class="noshow" style="display:none;" id="tab-9">
+                        <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-links-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-down"></span></button>
+                    </b>
+                    
+                    <div class="allshow" style="display:none;" id="tab-links-content">
+                        
+                        <hr class="star-primary">
+                        <h2>Random Links</h2>
+                        <ul>
+                            <li><span class="label label-danger"><a href="weeklyquiz.html"><font color="white">Weekly Twitter quiz</font></a></span> Theoretical computer science, mathematics, and random nuggets.</li>
+                            <li><span class="label label-primary"><a target="_blank" href="https://github.com/ccanonne/probabilitydistributiontoolbox/"><font color="white">Notes on Github</font></a></span> Folklore facts on probability distribution learning, testing, and whatever-ing .</a></li>
+                            <li><span class="label label-warning"><a target="_blank" href="https://math.stackexchange.com/users/75808/clement-c"><font color="white">Math.StackExchange</font></a></span> A place where I procrastinate.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!------------------------------------------------------------------------------------------------------------------------------>      
+<!------------------------------------------------------------------------------------------------------------------------------>      
+        
+        <hr class="star-primary">
+        <footer>
+            <small>
+                <center>
+                    © 2015 | D. Zeinalipour. Credits: AR template
+                    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+                    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+                        <a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+                            https://github.com/dmsl/academic-responsive-template
+                        </a> ]
+                    </div>
+                </center>
+            </small>
+        </footer>
+        
+    </body>
+    
+</html>
