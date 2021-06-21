@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	textarea
+	{
+		width: 24em;
+		height: 6em;
+	}
+</style>
+<script type="text/javascript">
+	function setCharAt(str,index,chr) {
+    		if(index > str.length-1) return str;
+   		return str.substring(0,index) + chr + str.substring(index+1);
+	}
+	function BinToText() {
+ 	   	var a = document.getElementById("inputBinaryA").value;
+ 	   	var b = document.getElementById("inputBinaryB").value;
+ 	   	var c = document.getElementById("inputBinaryC").value;
+		var z = a;
+		var length = Math.min(a.length,b.length,c.length);
+		for( let i = 0; i < length; ++i )
+		{
+			if(a[i] != " " )
+			{
+				//console.log( z, parseInt(a[i]), parseInt(b[i]), parseInt(c[i]), parseInt(a[i]) ^ parseInt(b[i]) ^ parseInt(c[i]), (parseInt(a[i]) ^ parseInt(b[i]) ^ parseInt(c[i])).toString() );
+				z = setCharAt(z, i,  (parseInt(a[i]) ^ parseInt(b[i]) ^ parseInt(c[i])).toString() );
+			}
+		}
+		document.getElementById("outputBinaryZ").value = z;
+		let outputStr = z.split(' ') 				// Split string in array of binary chars
+   			.map(bin => String.fromCharCode(parseInt(bin, 2))) 	// Map every binary char to real char
+   			.join(''); 						// Join the array back to a string
+    		document.getElementById("outputText").value = outputStr;
+	}
+</script>
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<center>
+  <div class="container">
+    <textarea autofocus class="inputBinary" id="inputBinaryA" onKeyUp="BinToText()" placeholder="Input: Alice"></textarea>
+    <textarea autofocus class="inputBinary" id="inputBinaryB" onKeyUp="BinToText()" placeholder="Input: Bob"></textarea>
+    <textarea autofocus class="inputBinary" id="inputBinaryC" onKeyUp="BinToText()" placeholder="Input: Carol"></textarea>
+    <textarea autofocus class="inputBinary" id="outputBinaryZ" onKeyUp="BinToText()" placeholder="XOR(a,b, c)"></textarea>
+    <textarea id="outputText" readonly placeholder="Human-readable version"></textarea>
+  </div>
+</center>
+</body>
+</html>
