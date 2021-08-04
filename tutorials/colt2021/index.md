@@ -1,5 +1,3 @@
-title: COLT 2021 Tutorial: Statistical Inference in Distributed or Constrained Settings
-
 # COLT 2021 Tutorial: Statistical Inference in Distributed or Constrained Settings
 ## Techniques and Recipes
 
