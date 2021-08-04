@@ -9,3 +9,11 @@ This tutorial will provide a primer of those techniques, aiming to give both an 
 establishing lower bounds for statistical estimation, in particular for parameter estimation (single- and high-dimensional) and testing. The tutorial will cover various models: nonadaptive, sequentially adaptive, blackboard model, and memory-constrained settings; with applications to high-dimensional parameter estimation and testing.
 
 __Presenters:__ [Jayadev Acharya](https://people.ece.cornell.edu/acharya/), [Clément Canonne](https://ccanonne.github.io/), and [Himanshu Tyagi](https://ece.iisc.ac.in/~htyagi/)
+
+* Tutorial
+  * Part 0 (15mn): Setting the stage: scope, models
+  * Part 1 (45mn): Lower bounds for learning/estimation problems over discrete univariate domains, and some useful general upper bound techniques
+  * Part 2 (45mn): Lower bounds for learning/estimation problems: generalisation to high dimensions
+* Recitation (45mn)
+  * Mean estimation under local privacy or communication constraints: matching upper and lower bounds
+  * Extra exercises and applications
