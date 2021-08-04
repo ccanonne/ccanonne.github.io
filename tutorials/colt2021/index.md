@@ -1,4 +1,4 @@
-# COLT 2021 Tutorial: Statistical Inference in Distributed or Constrained Settings
+# [COLT 2021](http://www.learningtheory.org/colt2021/virtual/) Tutorial: Statistical Inference in Distributed or Constrained Settings
 ## Techniques and Recipes
 
 ⏰ _Tutorial time:_ [August 4, 18:30–21:30 Mountain Time](https://www.timeanddate.com/worldclock/converter.html?iso=20210805T003000&p1=224&p2=tz_mt&p3=179&p4=tz_gmt&p5=136&p6=195&p7=tz_ist&p8=tz_sgt&p9=tz_aet)
