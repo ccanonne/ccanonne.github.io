@@ -12,7 +12,7 @@ establishing lower bounds for statistical estimation, in particular for paramete
 
 __Presenters:__ [Jayadev Acharya](https://people.ece.cornell.edu/acharya/), [Clément Canonne](https://ccanonne.github.io/), and [Himanshu Tyagi](https://ece.iisc.ac.in/~htyagi/)
 
-__Recitation tutors__: Aditya Vikram Singh, [Ziteng Sun](http://www.zitengsun.com/)
+__Recitation tutors__: [Aditya Vikram Singh](https://aditya-vs.github.io/), [Ziteng Sun](http://www.zitengsun.com/)
 
 * Tutorial
   * Part 0 (15mn): Setting the stage: scope, models
