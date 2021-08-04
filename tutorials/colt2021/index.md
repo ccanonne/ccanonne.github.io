@@ -16,4 +16,4 @@ __Presenters:__ [Jayadev Acharya](https://people.ece.cornell.edu/acharya/), [Cl√
   * Part 2 (45mn): Lower bounds for learning/estimation problems: generalisation to high dimensions
 * Recitation (45mn)
   * Mean estimation under local privacy or communication constraints: upper and lower bounds for product distributions, and Gaussians
-  * Extra exercises and applications: ``Simulate-and-Infer,`` some sanity checks, and miscellaneous useful tricks.
+  * Extra exercises and applications: "Simulate-and-Infer," some sanity checks, and miscellaneous useful tricks.
