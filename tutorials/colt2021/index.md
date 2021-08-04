@@ -15,5 +15,5 @@ __Presenters:__ [Jayadev Acharya](https://people.ece.cornell.edu/acharya/), [Cl√
   * Part 1 (45mn): Lower bounds for learning/estimation problems over discrete univariate domains, and some general upper bound techniques
   * Part 2 (45mn): Lower bounds for learning/estimation problems: generalisation to high dimensions
 * Recitation (45mn)
-  * Mean estimation under local privacy or communication constraints: upper and lower bounds for product distributions, and Gaussians
+  * Mean estimation under local privacy or communication constraints: upper and lower bounds for product and Gaussian distributions
   * Extra exercises and applications: "Simulate-and-Infer," some sanity checks, and miscellaneous useful tricks.
