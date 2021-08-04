@@ -14,12 +14,12 @@ __Presenters:__ [Jayadev Acharya](https://people.ece.cornell.edu/acharya/), [Cl�
 
 __Recitation tutors__: [Aditya Vikram Singh](https://aditya-vs.github.io/), [Ziteng Sun](http://www.zitengsun.com/)
 
-* Tutorial
+* 🧑‍🏫 _Tutorial_
   * Part 0 (15mn): Setting the stage: scope, models
   * Part 1 (45mn): Lower bounds for learning/estimation problems over discrete univariate domains, and some general upper bound techniques
   * Part 2 (45mn): Lower bounds for learning/estimation problems: generalisation to high dimensions
-* Recitation (45mn)
+* 📝 _Recitation_ (45mn) ([exercises](recitation.pdf), [solutions](recitation-solutions.pdf))
   * Mean estimation under local privacy or communication constraints: upper and lower bounds for product and Gaussian distributions
   * Extra exercises and applications: "Simulate-and-Infer," some sanity checks, and miscellaneous useful tricks.
 
-__Bibliography__: [available here](https://bibbase.org/show?bib=https%3A%2F%2Fccanonne.github.io%2Ftutorials%2Fcolt2021%2Fbibliography.bib&fullnames=1&theme=default) (📝 [BibTex source](bibliography.bib))
+📚 __Bibliography__: [available here](https://bibbase.org/show?bib=https%3A%2F%2Fccanonne.github.io%2Ftutorials%2Fcolt2021%2Fbibliography.bib&fullnames=1&theme=default) ([BibTex source](bibliography.bib))
