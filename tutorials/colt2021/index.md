@@ -12,7 +12,7 @@ __Presenters:__ [Jayadev Acharya](https://people.ece.cornell.edu/acharya/), [Cl√
 
 * Tutorial
   * Part 0 (15mn): Setting the stage: scope, models
-  * Part 1 (45mn): Lower bounds for learning/estimation problems over discrete univariate domains, and some useful general upper bound techniques
+  * Part 1 (45mn): Lower bounds for learning/estimation problems over discrete univariate domains, and some general upper bound techniques
   * Part 2 (45mn): Lower bounds for learning/estimation problems: generalisation to high dimensions
 * Recitation (45mn)
   * Mean estimation under local privacy or communication constraints: matching upper and lower bounds
