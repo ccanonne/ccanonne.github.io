@@ -22,7 +22,7 @@ __Recitation tutors__: [Aditya Vikram Singh](https://aditya-vs.github.io/), [Zit
   * Mean estimation under local privacy or communication constraints: upper and lower bounds for product and Gaussian distributions
   * Extra exercises and applications: "Simulate-and-Infer," some sanity checks, and miscellaneous useful tricks.
 
-## Bibliography
+### Bibliography
 
 <figure class="video_container">
 <iframe src="https://bibbase.org/show?bib=https%3A%2F%2Fccanonne.github.io%2Ftutorials%2Fcolt2021%2Fbibliography.bib&fullnames=1&theme=default&jsonp=1"></iframe>
