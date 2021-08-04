@@ -25,5 +25,5 @@ __Recitation tutors__: [Aditya Vikram Singh](https://aditya-vs.github.io/), [Zit
 ### Bibliography
 
 <figure class="video_container">
-<iframe src="https://bibbase.org/show?bib=https%3A%2F%2Fccanonne.github.io%2Ftutorials%2Fcolt2021%2Fbibliography.bib&fullnames=1&theme=default&jsonp=1" ></iframe>
+<iframe src="https://bibbase.org/show?bib=https%3A%2F%2Fccanonne.github.io%2Ftutorials%2Fcolt2021%2Fbibliography.bib&fullnames=1&theme=default"></iframe>
 </figure>
