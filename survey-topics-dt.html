@@ -2,17 +2,27 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://latex.now.sh/style.min.css" />
+    <link rel="stylesheet" href="https://latex.now.sh/prism/prism.css">
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs-bibtex@2.0.1/prism-bibtex.min.js"></script>
     <meta charset="utf-8">
     <title>Topics and Techniques in Distribution Testing (Survey)</title>
     <style>
-       .pdfobject-container { height: 60rem; border: 1rem solid rgba(0,0,0,.1); width: 200%; text-align: center; }
+       .pdfobject-container { height: 30rem; border: 1rem solid rgba(0,0,0,.1); width: 100%; text-align: center; }
+       body
+       {
+       	max-width: 90ch;
+       }
+       h2{
+	  text-align: center;
+       }
     </style>
   </head>
   <body>
     <h1>Topics and Techniques in Distribution Testing</h1>
     <h2>A Biased but Representative Sample</h2>
-    <p class="author"><a href="https://ccanonne.github.io/" target="_blank">Cl&#233;ment Canonne</a><br/>March, 2022</p>
-
+    <p class="author"><label for="sn-1" class="sidenote-toggle sidenote-number"><a href="https://ccanonne.github.io/" target="_blank">Cl&#233;ment Canonne</a></label><input type="checkbox" id="sn-1" class="sidenote-toggle" />
+<span class="sidenote">University of Sydney</span><br/>March, 2022</p>
 <div class="abstract">
   <h2>Abstract</h2>
   <p>This survey focuses on some specific problems in distribution testing,
@@ -21,8 +31,50 @@ it does not aim to provide a comprehensive summary of all
 the topics in the area; but will provide self-contained proofs and derivations of the main results, trying
 to highlight the unifying techniques.</p>
 </div>
-    
-    <div id="survey"></div>
+
+<nav role="navigation" class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#what">What is this survey?</a></li>
+      <ol>
+      	<li><a href="#who">Who is this for?</a></li>
+      	<li><a href="#where">Where can I get it?</a></li>
+      	<li><a href="#how">How do I cite it?</a></li>
+      </ol>
+      <li><a href="#feedback">I have a question! Actually, more of a comment.</a></li>
+      <li><a href="#author">About the author</a></li>
+  </nav>
+  
+  
+  <h3 id="what">What is this survey?</h3>
+  To quote and paraphrase the first chapter: <blockquote>This survey [is meant] as an introduction and detailed overview of some topics in <em>distribution testing</em>, an area of theoretical computer science which falls under the general
+umbrella of property testing, and sits at the intersection of computational learning, statistical
+learning and hypothesis testing, information theory, and (depending whom one asks) the
+theory of machine learning.</blockquote>
+There are several other resources you may want to read about this topic, starting with <a href="https://xrds.acm.org/article.cfm?aid=2331052" target="_blank">this short introductory survey</a> by <label for="sn-2" class="sidenote-toggle sidenote-number">Ronitt Rubinfeld,</label><input type="checkbox" id="sn-2" class="sidenote-toggle" />
+<span class="sidenote">Taming big probability distributions <em>XRDS: Crossroads, ACM</em> (2012).</span>  or <a href="https://theoryofcomputing.org/articles/gs009/" target="_blank">this other survey</a> by, well, <label for="sn-3" class="sidenote-toggle sidenote-number">myself.</label><input type="checkbox" id="sn-3" class="sidenote-toggle" />
+<span class="sidenote">A Survey on Distribution Testing: Your Data is Big. But is it Blue? <em>Theory of Computing</em> (2020).</span> This book differs from the previous ones in that it is (1) more recent, (2) more specific, focusing on a subset of questions and using them as guiding examples, instead of depicting as broad a landscape as possible (but from afar), (3) more detailed, including proofs and derivations, and (4) written mind the objective of putting the theoretical computer science, statistics, and information theory viewpoints together. Of course, I cannot promise I succeeded; but that was the intent, and you'll be the judge of the result.
+  <h4 id="who">Who is this for?</h4>
+  This survey is intended for graduate (doctoral) students, advanced undergraduate students, and generally speaking any researcher interested in the topic with a solid background in theoretical computer science, information theory, and/or discrete mathematics. 
+  <h4 id="where">Where can I get it?</h4>
+  The full draft is available <a href="https://ccanonne.github.io/files/misc/main-survey-fnt.pdf" target="_blank">at this address</a>.<br /><br />
+  <div id="survey"></div>
+  
+  <h4 id="how">How do I cite it?</h4>
+  The book is still under review, and as such does not have a DOI or "nice" citation yet. However, you can use the following BibTeX snippet in the meantime:
+	<pre><code class="lang-bibtex">@unpublished{CanonneTopicsDT2022,
+	title = {{Topics and Techniques in Distribution Testing: A Biased but Representative Sample}},
+	shorttitle = {{Topics and Techniques in Distribution Testing}},
+	url = {https://ccanonne.github.io/files/misc/main-survey-fnt.pdf},
+	author = {Canonne, Cl\'{e}ment L.},
+	month = mar,
+	year = {2022},
+}</code></pre>
+  <h3 id="feedback">I have a question! Actually, more of a comment.</h3>
+      Comments, feedback, and questions about the book are welcome. Feel free to contact me at <a href="mailto:clement.canonne@sydney.edu.au?subject=[Survey] Comment">clement.canonne@sydney.edu.au</a>.
+  <h3 id="author">About the author</h3>
+  <label for="sn-4" class="sidenote-toggle sidenote-number"><a href="https://ccanonne.github.io/" target="_blank">Cl&#233;ment Canonne</a><input type="checkbox" id="sn-4" class="sidenote-toggle" />
+<span class="sidenote">Me</span> is a Lecturer in the <a href="https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html" target="_blank">School of Computer Science</a> of the University of Sydney; he obtained his Ph.D. in 2017 from Columbia University, before joining Stanford as a Motwani Postdoctoral Fellow, then IBM Research as a Goldstine Postdoctoral Fellow. His main areas of research are distribution testing (and, broadly speaking, property testing) and learning theory; focusing, in particular, on understanding the computational aspects of learning and statistical inference subject to various resource or information constraints. 
     
   </body>
   <script src="https://unpkg.com/pdfobject@2.2.7/pdfobject.min.js"></script>
