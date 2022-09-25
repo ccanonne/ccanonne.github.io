@@ -7,10 +7,10 @@
 
 
 
-\documentclass[10pt,letter]{moderncv}
+\documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
-\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
 %\moderncvtheme[blue]{classic}                % idem
 
 % character encoding
@@ -25,7 +25,7 @@
           Manuscripts}
 
 % adjust the page margins
-\usepackage[scale=0.87]{geometry}
+\usepackage[scale=0.89]{geometry}
 \setlength{\hintscolumnwidth}{26mm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{8cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
@@ -45,12 +45,12 @@
 \familyname{Canonne}
 \title{Curriculum Vit\ae}              	            % optional
 %\address{910, Columbus Avenue, \#1D}{New York, NY 10025}    % optional
-\mobile{+61 410079377}                    	        % optional
+%\mobile{+61 410079377}                    	        % optional
 %\fax{fax (optional)}                          	    % optional
 \email{clement.canonne@sydney.edu.au}               % optional
 %\extrainfo{additional information (optional)} 	    % optional
 %\photo[58pt]{photographie}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the file; optional
-\quote{``There is a crack in everything. That's how the light gets in.'' \\\hfill --- Leonard Cohen}                 % optional
+%\quote{``There is a crack in everything. That's how the light gets in.'' \\\hfill --- Leonard Cohen}                 % optional
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -60,34 +60,59 @@
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
-\vspace{-5mm}
+\vspace{-10mm}
 
-%\section{Master thesis}
-%\cvline{title}{\emph{Title}}
-%\cvline{supervisors}{Supervisors}
-%\cvline{description}{\small Short thesis abstract}
+\section{Research Area}
+Distribution testing, property testing, and learning theory, focusing on the computational aspects of machine learning and statistical inference under resource or information constraints; as well as rigorous approaches to data privacy, specifically differential privacy. 
 
-\section{Professional appointments}
+\section{Employment History}
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 are optional
 \cventry{2021--}{Lecturer}{School of Computer Science}{University of Sydney}{}{} 
 \cventry{2019--2020}{Goldstine Postdoctoral Fellow}{IBM Research}{San Jose}{}{} 
-\cventry{2017--2019}{Motwani Postdoctoral Fellow}{Stanford University}{Stanford}{}{Hosted by Prof. Moses Charikar.} 
+\cventry{2017--2019}{Motwani Postdoctoral Fellow}{Stanford University}{Stanford}{}{Host: Prof. Moses Charikar.}
+\cventry{August. 2017}{Visiting Scholar}{Northwestern University}{}{}{Host: Prof. Anindya De}
+\cventry{June--July. 2016}{Visiting Scholar}{USC}{}{}{Host: Prof. Ilias Diakonikolas}
+\cventry{May--Aug. 2014}{Summer Intern}{Microsoft Research New England}{}{}{Host: Prof. Madhu Sudan}
+\cventry{June--Aug. 2013}{Visiting Scholar}{MIT}{}{}{Host: Prof. Ronitt Rubinfeld}
+%\cventry{April--Sept. 2012}{Research Internship}{Columbia University}{}{with Prof. Rocco Servedio}{Computational learning: testing and learning distributions}
+%%\cventry{June--Aug. 2011}{Internship}{CEA (Atomic and Alternative Energies Commission)}{École Centrale Paris}{}{Study of the efficiency of multiprocessor GPU architectures for neural networks}
+%%\cventry{Feb--May. 2011}{Senior Research Project}{Princeton University}{}{}{Designed an approach for an automatized discovery of similarities and plagiarism in texts, from a stylistic point of view}
+%\cventry{Fall 2010}{Project}{École Centrale Paris}{}{}{Studied, designed and implemented intelligent behaviors and machine learning for entities in a videogame}
+%%\subsection{Professional}
+%%\cventry{Fall 2010}{Part-time job}{CNES (National Centre of Space Research)}{École Centrale Paris}{}{Designed and developed an HMI for a rocket trajectory simulator and optimizer}
+%\cventry{June--July 2010}{Internship}{Exalead}{Paris}{}{Created data corpus (Annotated databases and tools to manipulate them)}                
+%%\cventry{May--July 2010}{Internship}{Institut Pasteur}{Paris}{}{Designed and developed analysis tools in Matlab to study the electrophysiological properties of adult-born neurons (Department of Neuroscience)}                
+%\cventry{2009--2010}{Apprenticeship Tax}{École Centrale Paris}{}{}{Contacted companies to collect vocational education tax.}
+%\cventry{}{Project}{École Centrale Paris}{}{}{Designed a haptic device to control embedded computers in cars, for the CEA (Atomic Energy and Alternative Energies Commission) -- developed the user interface and control software}
+%\cventry{Nov. 2009}{Centrale Job Fair}{École Centrale Paris}{}{}{Correspondent for SAP BusinessObjects (software development and consulting corporation), at the Centrale Job Fair}
+%\cventry{July 2007}{Street sweeper}{Municipal employee}{Le Pouliguen}{}{}
+ 
 \section{Education}
-\cventry{2012--2017}{Ph.D. (Computer Science)}{Columbia University}{New York}{}{Adviser: Prof.~Rocco Servedio.\\ Thesis title: \textit{Property Testing and Probability Distributions: New Techniques, New Models, and New Goals}.}
+\cventry{2012--2017}{Ph.D. (Computer Science)}{Columbia University}{New York}{}{Adviser: Prof.~Rocco Servedio\\ Thesis: \textit{Property Testing and Probability Distributions: New Techniques, New Models, and New Goals}.}
 \cventry{Sept. 2012}{M.Sc. (Computer Science)}{MPRI (Parisian Master of Research in Computer Science)}{Paris}{\itshape magna cum laude}{}
 %{Courses taken: \footnotesize\emph{Randomness in Complexity}, \emph{Analysis of algorithms}, \emph{Advanced algorithms}, \emph{Game theory techniques in computer science}, \emph{Foundations of network models}, \emph{Logical and Computational Structures for Linguistic Modeling}, \emph{Quantum information and applications} and \emph{Foundations of proof systems}.}
-\cventry{2011--2012}{Student}{École Centrale Paris\textsuperscript{\textup{1}} (Engineering School)}{Paris}{third year (last year of Master of Science)}{Option \emph{Applied Mathematics}, majoring in \emph{Machine Learning and Computer Vision}.} % \textsuperscript{\ \textup{1}} instead of \footnotemark[1]
+\cventry{2011--2012}{M.Sc.}{École Centrale Paris\textsuperscript{\textup{1}}}{Paris}{}{\emph{Diplôme d'Ingénieur}. \emph{Applied Mathematics}, majoring in  \emph{Machine Learning and Computer Vision}.} % \textsuperscript{\ \textup{1}} instead of \footnotemark[1]
 %\\Professional Track: \emph{Job Possibilities in Research} (FMR)}
 %\cventry{2010--2011}{Student}{École Centrale Paris}{Paris}{second year}{}
 \cventry{June 2011}{Bachelor's Degree (Engineering)}{École Centrale Paris}{Paris}{}{}
 \cventry{Spring 2011}{Exchange Student}{Princeton University}{Princeton, NJ, United States}{(Senior)}{}%{Courses taken: \footnotesize \emph{Approximation algorithms} (COS521), \emph{A kernel-based approach to machine learning} (ELE571), \emph{Random measures and Levy processes} (0RF551), as well as a Senior Independent Work project (\emph{``Automatized discovery of similarities, intertextuality and plagiarism in texts''}).}
 %\cventry{2009--2010}{Student}{École Centrale Paris}{Paris}{first year}{}  
-\cventry{June 2010}{Bachelor's Degree (Mathematics)}{Université Pierre et Marie Curie}{Paris}{\textit{summa cum laude}}{Specialization in Probabilities, Measure Theory and Topology (Curriculum followed alongside the studies at the École Centrale Paris).}
+\cventry{June 2010}{Bachelor's Degree (Mathematics)}{Université Pierre et Marie Curie}{Paris}{\textit{summa cum laude}}{Specialization in Probabilities, Measure Theory and Topology} % (Curriculum followed alongside the studies at the École Centrale Paris).}
 %\cventry{}{Student}{Université Pierre et Marie Curie}{Paris}{final year of Bachelor's program}{Curriculum followed alongside the studies at the École Centrale Paris.}
-\cventry{July 2009}{Preparatory School (CPGE)}{MP*}{Competitive entrance exams}{}{Accepted in École Centrale Paris; additionally, enrolled as a student at the Université Pierre et Marie Curie.}
-\cventry{2006--2009}{Preparatory School (CPGE)}{Lycée Henri IV}{Paris}{MPSI/MP*}{Intensive studies in math and physics for the highly competitive entrance exams to the French ``Grandes Ecoles.''}
-\cventry{July 2006}{Baccalauréat général (Scientific Stream)}{Lycée Henri IV}{Paris}{}{Mention \textsl{très bien} (highest honours).}
+%\cventry{July 2009}{Preparatory School (CPGE)}{MP*}{Competitive entrance exams}{}{Accepted in École Centrale Paris; additionally, enrolled as a student at the Université Pierre et Marie Curie.}
+%\cventry{2006--2009}{Preparatory School (CPGE)}{Lycée Henri IV}{Paris}{MPSI/MP*}{Intensive studies in math and physics for the highly competitive entrance exams to the French ``Grandes Ecoles.''}
+%\cventry{July 2006}{Baccalauréat général (Scientific Stream)}{Lycée Henri IV}{Paris}{}{Mention \textsl{très bien} (highest honours).}
 %\cventry{2005--2006}{Lycée}{Lycée Henri IV}{Paris}{Final year of secondary school}{Baccalauréat (scientific, specialization in mathematics)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Honors and Awards}
+\cvlistitem{ARC Discovery Early Career Researcher Award (DECRA) (2023)\\
+\small Project: \emph{Trading Privacy, Bandwidth and Accuracy in Algorithmic Machine Learning}}
+\cvlistitem{Morton B. Friedman Memorial Prize for Excellence at Columbia Engineering, \itshape Columbia University (2018)}
+\cvlistitem{Andrew P. Kosoresow Memorial Award for Outstanding Performance in TA-ing and Service, \itshape Columbia University (2017)}
+\cvlistitem{Computer Science	Service	Award, \itshape Columbia University (2014, 2015, 2016, and 2017)}
+\cvlistitem{Paul Charles Michelman Memorial Award for Exemplary Service, \itshape Columbia University (2014 and 2017)}
+\cvlistitem{Computer Science Chair’s Distinguished Fellowship, \itshape Columbia University (2012)}
  
 \section{Publications}
 \nocitejl{*}\nocitecf{*}\nocitetr{*}\nocitems{*}
@@ -100,30 +125,15 @@
 \bibliographytr{publications-techreport}
 \bibliographyms{publications-manuscript}
 
-\section{Research and work experience}
-%%\subsection{Research}
-\cventry{August. 2017}{Visiting Scholar}{Northwestern University}{}{with Prof. Anindya De}{Computational learning}
-\cventry{June--July. 2016}{Visiting Scholar}{USC}{}{with Prof. Ilias Diakonikolas}{Property testing (probability distributions)}
-\cventry{May--Aug. 2014}{Summer Intern}{Microsoft Research New England}{}{with Prof. Madhu Sudan}{Property testing and Communication complexity}
-\cventry{June--Aug. 2013}{Visiting Scholar}{MIT}{}{with Prof. Ronitt Rubinfeld}{Property testing (probability distributions and Boolean functions)}
-\cventry{April--Sept. 2012}{Research Internship}{Columbia University}{}{with Prof. Rocco Servedio}{Computational learning: testing and learning distributions}
-\cventry{June--Aug. 2011}{Internship}{CEA (Atomic and Alternative Energies Commission)}{École Centrale Paris}{}{Study of the efficiency of multiprocessor GPU architectures for neural networks}
-\cventry{Feb--May. 2011}{Senior Research Project}{Princeton University}{}{}{Designed an approach for an automatized discovery of similarities and plagiarism in texts, from a stylistic point of view}
-%\cventry{Fall 2010}{Project}{École Centrale Paris}{}{}{Studied, designed and implemented intelligent behaviors and machine learning for entities in a videogame}
-%%\subsection{Professional}
-\cventry{Fall 2010}{Part-time job}{CNES (National Centre of Space Research)}{École Centrale Paris}{}{Designed and developed an HMI for a rocket trajectory simulator and optimizer}
-%\cventry{June--July 2010}{Internship}{Exalead}{Paris}{}{Created data corpus (Annotated databases and tools to manipulate them)}                
-\cventry{May--July 2010}{Internship}{Institut Pasteur}{Paris}{}{Designed and developed analysis tools in Matlab to study the electrophysiological properties of adult-born neurons (Department of Neuroscience)}                
-%\cventry{2009--2010}{Apprenticeship Tax}{École Centrale Paris}{}{}{Contacted companies to collect vocational education tax.}
-%\cventry{}{Project}{École Centrale Paris}{}{}{Designed a haptic device to control embedded computers in cars, for the CEA (Atomic Energy and Alternative Energies Commission) -- developed the user interface and control software}
-%\cventry{Nov. 2009}{Centrale Job Fair}{École Centrale Paris}{}{}{Correspondent for SAP BusinessObjects (software development and consulting corporation), at the Centrale Job Fair}
-%\cventry{July 2007}{Street sweeper}{Municipal employee}{Le Pouliguen}{}{}
-%\subsection{Miscellaneous}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iffalse %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Teaching experience}
 \cventry{2021--}{Lecturer}{University of Sydney}{Sydney}{}{%
 \begin{itemize}
-  \item{\makebox[2cm]{Spring 2021: \hfill} COMP9123 -- Data Structures and Algorithms}
+  \item{\makebox[2cm]{S2 2022: \hfill} COMP9123 -- Data Structures and Algorithms}
+  \item{\makebox[2cm]{S1 2022: \hfill} COMP9123 -- Data Structures and Algorithms}
+  \item{\makebox[2cm]{S2 2021: \hfill} COMP9123 -- Data Structures and Algorithms}
+  \item{\makebox[2cm]{S1 2021: \hfill} COMP9123 -- Data Structures and Algorithms}
 \end{itemize}
 }
 \cventry{2012--2014}{Teaching Assistant}{Columbia University}{New York}{}{%
@@ -139,16 +149,11 @@
 \end{itemize}
 }
 \cventry{2009--2011}{Mathematics Tutor}{Foyer Bossuet}{Paris}{Part-time job}{Oral examiner and tutor, in mathematics, for students in preparatory classes (CPGE)}
+\fi %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ù
-\section{Awards and Honors}
-\cvlistitem{Morton B. Friedman Memorial Prize for Excellence at Columbia Engineering, \itshape Columbia University (2018)}
-\cvlistitem{Andrew P. Kosoresow Memorial Award for Outstanding Performance in TA-ing and Service, \itshape Columbia University (2017)}
-\cvlistitem{Computer Science	Service	Award, \itshape Columbia University (2014, 2015, 2016, and 2017)}
-\cvlistitem{Paul Charles Michelman Memorial Award for Exemplary Service, \itshape Columbia University (2014 and 2017)}
-\cvlistitem{Computer Science Chair’s Distinguished Fellowship, \itshape Columbia University (2012)}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
 \renewcommand{\listitemsymbol}{- } % change the symbol for lists
 \section{Invited Talks}
@@ -181,12 +186,13 @@
 \cvlistitem{External reviewer for 
   \begin{itemize}
       \item SODA~'14, '15, '17, '18, '19, '20, '21;
-            ICALP~'14, '16, '17, '18, '19, '21;
-            RANDOM~'14,~'15,~'18,~'20;
-            COLT~'14,~'15,~'16,~'17,~'19,~'20,~'21;
+            ICALP~'14, '16, '17, '18, '19, '21, '22;
+            APPROX~'22;
+            RANDOM~'14,~'15,~'18,~'20,~'21,~'22;
+            COLT~'14,~'15,~'16,~'17,~'19,~'20,~'21,~'22;
             MFCS~'15, '20;
             STACS~'16, '17, '18;
-            CCC~'16,~'17;
+            CCC~'16,~'17,~'22;
             STOC~'14,~'15,~'17,~'18,~'19,~'20,~'21,~'22;
             FOCS~'15,~'16,~'17,~'18,~'19,~21;
             ESA~'17;
@@ -199,7 +205,11 @@
             NeurIPS~'18, '19, '20, '21;
             AISTATS~'19;
             LATIN~'20;
-            ITC'~20
+            ITC'~20;
+            SOSA~'23; 
+            TQC~'22;
+            SWAT~'20; 
+            FAccT~'22
       \item 
 ACM Transactions on Computation Theory (TOCT), 
 AMS Mathematical Reviews, 
@@ -225,10 +235,14 @@ Theoretical Computer Science.
 % %\cvlistitem{Board of the Association of Residents of École Centrale  campus (2010--2011)}
 %\cvlistitem[+]{Item 3}            % optional other symbol
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\iffalse
 \section{Languages}
 \cvlanguage{English}{Fluent}{}%{677/677 at ECP's internal TOEFL, and studied one semester in the United States} % 111/120 TOEFL
 \cvlanguage{French}{Mother tongue}{}
 \cvlanguage{Spanish, Italian}{Basic}{}
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \section{Skills}\nopagebreak
 % \cvline{Basics}{Usual office software applications, new technologies, GNU/Linux}\nopagebreak
