@@ -5,8 +5,6 @@
 % conditions of the LaTeX Project Public License version 1.3c,
 % available at http://www.latex-project.org/lppl/.
 
-
-
 \documentclass[11pt,a4paper]{moderncv}
 
 % moderncv themes
@@ -15,6 +13,7 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage[T1]{fontenc}					  % Important to deal with accents in the bibliography (esp. to put the name in bold)
 \usepackage{lmodern}
 \usepackage{microtype}                        % Better-looking spacing and hyphenation
 \usepackage{multibib}
@@ -23,7 +22,12 @@
           Conference papers,%
           Surveys and monographs,%
           Manuscripts}
-
+          
+\usepackage{xstring} % puts my name in bold: https://tex.stackexchange.com/questions/298931/getting-the-error-argument-of-mtresa-has-an-extra
+\def\FormatName#1{%
+  \IfSubStr{#1}{Canonne}{\textbf{#1}}{#1}%
+}
+          
 % adjust the page margins
 \usepackage[scale=0.89]{geometry}
 \setlength{\hintscolumnwidth}{26mm}						% if you want to change the width of the column with the dates
@@ -105,6 +109,14 @@ Distribution testing, property testing, and learning theory, focusing on the com
 %\cventry{2005--2006}{Lycée}{Lycée Henri IV}{Paris}{Final year of secondary school}{Baccalauréat (scientific, specialization in mathematics)}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Honorary Affiliations}
+
+\cventry{}{Institute for Emerging CORE Methods in Data Science (EnCORE)}{UCSD}{}{}{}
+\cventry{}{Sydney AI Centre}{}{University of Sydney}{}{}
+\cventry{}{Sydney Quantum Academy (SQA)}{NSW}{}{}{}
+\cventry{}{Digital Science Initiative}{Data-Centric Engineering}{University of Sydney}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Honors and Awards}
 \cvlistitem{ARC Discovery Early Career Researcher Award (DECRA) (2023)\\
 \small Project: \emph{Trading Privacy, Bandwidth and Accuracy in Algorithmic Machine Learning}}
@@ -175,6 +187,7 @@ Distribution testing, property testing, and learning theory, focusing on the com
 \cvlistitem{Senior Program Committee (Senior PC) member for the 36\textsuperscript{th} Annual Conference on Learning Theory (COLT'23)}
 \cvlistitem{Program Committee member for the 2023 International Colloquium on Automata, Languages and Programming (ICALP'23)}
 \cvlistitem{Program Committee member for RANDOM'21 and '23}
+\cvlistitem{Open Problems Chair for the 35\textsuperscript{th} Annual Conference on Learning Theory (COLT'22)}
 \cvlistitem{Program Committee member for the 29\textsuperscript{th} European Symposium on Algorithms (ESA 2021), Track~A (design and analysis)}
 \cvlistitem{Social Chair for the 53\textsuperscript{rd} and 55\textsuperscript{th} Annual ACM Symposium on Theory of Computing (STOC'21 and '23)}
 \cvlistitem{Program Committee member for the ACM-SIAM Symposium on Discrete Algorithms (SODA'21 and '23)}

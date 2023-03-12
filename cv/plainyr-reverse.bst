@@ -220,8 +220,9 @@ FUNCTION {format.names}
   #1 'nameptr :=
   s num.names$ 'numnames :=
   numnames 'namesleft :=
-    { namesleft #0 > }
-    { s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't :=
+    { namesleft #0 > } 
+    %{ s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't := %% cf. https://tex.stackexchange.com/questions/33330/make-one-authors-name-bold-every-time-it-shows-up-in-the-bibliography for next line
+    { "\FormatName{" s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ * "}" * 't :=
       nameptr #1 >
         { namesleft #1 >
             { ", " * t * }
