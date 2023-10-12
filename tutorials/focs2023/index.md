@@ -8,3 +8,7 @@ High-dimensional probability distributions are currently omnipresent as models f
 The goal of the proposed workshop is to highlight current trends in research on \textbf{algorithmic aspects of high-dimensional probabilistic models}. Specifically, we will focus on recent works that identify \textbf{new directions for the TCS community}, so as to encourage newcomers to delve into the important problems in the area. The workshop is particularly timely, as it is increasingly in vogue to be presented with generative models that sample from a distribution _D_, with the goal being to efficiently learn information about _D_. What are rigorous guarantees that can be made when _D_ is high-dimensional and  "complex"? Better understanding of the computational aspects of such questions can  be potentially impactful for a number of areas, e.g., security, machine learning, probabilistic programming, etc.
 
 __Program__: TBD (available soon)
+
+The program will feature talks on recent and exciting results in this area, as well as an open problems presentation. 
+
+__Call for Open Problems:__ To suggest an open problem, please [fill this Google form](https://docs.google.com/forms/d/e/1FAIpQLSf_0me17ooezTjiVWVRgkcdJ2pAmCNxxRzZ_9WdAVJ7ojGGCg/viewform) 📋
