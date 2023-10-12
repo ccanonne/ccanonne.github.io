@@ -1,7 +1,7 @@
-# [FOCS 2023](https://focs.computer.org/2023/) Workshop: Algorithmic Aspects of High-Dimensional Probabilistic Models
+# [🦊 FOCS 2023](https://focs.computer.org/2023/) Workshop: Algorithmic Aspects of High-Dimensional Probabilistic Models
 ## Organized by Arnab Bhattacharyya (National University of Singapore) and Clément Canonne (University of Sydney)
 
-⏰ _Dates:_ Nov 6--7, 2023
+⏰ _Dates:_ Nov 6–7, 2023
 
 High-dimensional probability distributions are currently omnipresent as models for complex data. Probabilistic models are used in an amazingly diverse array of data analysis tasks, from understanding sociological behavior to enabling visual object recognition, speech perception, and natural language comprehension. High-dimensional probabilistic models take various forms: classically-studied models such as multivariate Gaussians and Erd\H{o}s-R\'enyi graphs, models with roots in statistical physics such as stochastic block models and Ising models, probabilistic graphical models such as Bayesian networks and Markov random fields, as well as the class of implicit generative models, such as generative adversarial networks and large language models, that have taken the world by storm recently. 
 
