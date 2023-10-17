@@ -9,7 +9,7 @@ The goal of the proposed workshop is to highlight current trends in research on 
 
 __Program__: tentative (more details available soon)
 
-The program will feature talks on recent and exciting results in this area, as well as an open problems presentation: 
+The program will feature talks on recent and exciting results in this area, and will gather open problems in the topic from and for the participants: 
 
 * November 6 (Day 1)
   * Yury Polyanskiy (MIT)
