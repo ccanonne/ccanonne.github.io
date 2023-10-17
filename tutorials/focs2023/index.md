@@ -12,10 +12,10 @@ __Program__: tentative (more details available soon)
 The program will feature talks on recent and exciting results in this area, and will gather open problems in the topic from and for the participants: 
 
 * November 6 (Day 1)
-  * Yury Polyanskiy (MIT)
-  * Inbal Rachel Livni Navon (Stanford University)
+  * [Inbal Livni Navon](http://inballn.su.domains/) (Stanford University)
+  * [Yury Polyanskiy](https://people.lids.mit.edu/yp/homepage/) (MIT)
 * November 7 (Day 2)
-  * Guy Van den Broeck (UCLA)
-  * Arnab Bhattacharyya (NUS)
+  * [Arnab Bhattacharyya](https://www.comp.nus.edu.sg/~arnab/) (NUS)
+  * [Guy Van den Broeck](https://web.cs.ucla.edu/~guyvdb/) (UCLA)
 
 __Call for Open Problems:__ To suggest an open problem, please [fill this Google form](https://docs.google.com/forms/d/e/1FAIpQLSf_0me17ooezTjiVWVRgkcdJ2pAmCNxxRzZ_9WdAVJ7ojGGCg/viewform) 📋
