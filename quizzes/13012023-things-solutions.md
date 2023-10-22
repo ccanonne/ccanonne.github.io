@@ -33,7 +33,7 @@ Now, what does ``flebs()`` do? Given a (large enough?) n, it tries to estimate t
 
 __Code 3:__ Oh, I like that one, and [it's not the first time I mentioned it!](https://twitter.com/ccanonne_/status/1331534438770020353). There is a very [nice probability fact](https://en.wikipedia.org/wiki/Coprime_integers#Probability_of_coprimality), which has a very easy heuristic but "wrong" proof (and a not-so-easy correct one to make it formal) which states that the probability
 $$
-p_n = \Pr[ \textrm{gcd}(x,y) = 1 ]
+p_n = \Pr[ gcd(x,y) = 1 ]
 $$
 that two independent and uniformly random integers in {1,..,n} are coprime goes to 6/π² as n grows. So ``blah()``, armed with that fact, picks two such integers, and returns 1 iff they are coprime, proudly returning a Bernoulli r.v. with parameter $p_n$.
 
