@@ -64,3 +64,9 @@ That... does not look to great, does it? Fortunately, using [Stirling's approxim
 $$\Pr[X = n]  = \frac{(2n)!}{2^{2n}(n!)^2}\sim \frac{1}{\sqrt{\pi n}}
 $$
 Also, that approximation is really, *really* good. So again, ``meeps()`` calls ``meep()`` n times, takes the inverse, multiplies by n and squares the whole thing to go from an estimate of $\frac{1}{\sqrt{\pi n}}$ to an estimate of 🥧. But then why is the result so bad, if Stirling's approximation is so good? 🤔
+
+Let's look at the quality of our estimate, when for a fixed n we take the sample mean over N repetitions (for us, N=n, but again — that's arbitrary). By the above, we estimate the parameter $p_n$ of a Bernoulli, which is approximately $\frac{1}{\sqrt{\pi n}}$, and so has variance $\sigma^2 \approx \frac{1}{\sqrt{\pi n}}$ as well. We end up with a sample mean with mean variance $\sigma^2/N = \Theta(1/(\sqrt{n}N))$, which for $N=n$ is $\Theta(1/n^{3/2})$. The estimator will fluctuate by something of the order of a standard deviation around its mean, so we'll get
+$$\frac{1}{\sqrt{\pi n}} \pm \Theta( \frac{1}{n^{3/4}} )$$
+Still, it's big, but not **too** bad, right? Err.... we're not done. Once we have that estimate $\hat{p}_n$ of our parameter $p_n$, we want to extract the value of $\pi$, so we apply the function $f(x) = \frac{1}{nx^2}$ to $\hat{p}_n$. And that's... not great! A Taylor series approximation shows that
+$$f(\frac{1}{\sqrt{\pi n}}\pm \frac{1}{n^{3/4}}) \approx \pi \pm \frac{2\pi^{3/2}}{n^{1/4}} $$
+so now we have an error of the order $\Theta(1/n^{1/4})$ around our estimate of $\pi$, not something behaving as $1/\sqrt{n}$ or so like for the others!
