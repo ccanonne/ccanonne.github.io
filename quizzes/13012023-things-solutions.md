@@ -69,4 +69,17 @@ Let's look at the quality of our estimate, when for a fixed n we take the sample
 $$\frac{1}{\sqrt{\pi n}} \pm \Theta( \frac{1}{n^{3/4}} )$$
 Still, it's big, but not **too** bad, right? Err.... we're not done. Once we have that estimate $\hat{p}_n$ of our parameter $p_n$, we want to extract the value of $\pi$, so we apply the function $f(x) = \frac{1}{nx^2}$ to $\hat{p}_n$. And that's... not great! A Taylor series approximation shows that
 $$f(\frac{1}{\sqrt{\pi n}}\pm \frac{1}{n^{3/4}}) \approx \pi \pm \frac{2\pi^{3/2}}{n^{1/4}} $$
-so now we have an error of the order $\Theta(1/n^{1/4})$ around our estimate of $\pi$, not something behaving as $1/\sqrt{n}$ or so like for the others!
+so now we have an error of the order $\Theta(1/n^{1/4})$ around our estimate of $\pi$, not something behaving as $1/\sqrt{n}$ or so like for the others! 😬
+
+![png](bad-approx-pi-stirling.png)
+
+__Code 5__: I like ``blop()``. It chooses a uniformly random permutation π of {1,2,...,n} (no, nope, not *that* π!), and then counts the number of fixed points of π, that is how many i such that π(i)=i. Then it returns 1 if, and only if, there is no fixed point.
+
+```python
+def blop(n):
+    p = rng.permutation(n)
+    return int( sum([ int(i==p[i]) for i in range(n) ]) == 0 )
+def blops(n):  # Fifth thing
+    return 1.0/sum([blop(n)/n for _ in range(n)])
+```
+So what is this supposed to do? Here's a fun fact: as n goes to ∞, [the number of fixed points of a uniformly random permutation converges to the Poisson distribution with parameter λ=1](https://math.stackexchange.com/questions/140751/random-permutation-poisson-proof). (Fun exercise: proving that the *expected* number of fixed points is 1 is [very easy, and a nice exercise](https://math.stackexchange.com/a/3985571/75808)). So What does that imply? That tells us that the probability to have 0 fixed points should converge to $e^{-1}$. which is the probability that a Poisson(1) r.v. equals 0! And yes: ``blops()`` calls ``blop()`` many times, uses that to get an estimate of $1/e$, then takes the inverse to **estimate Euler's number, $e$.**
