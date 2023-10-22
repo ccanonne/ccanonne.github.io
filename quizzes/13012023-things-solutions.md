@@ -1,7 +1,7 @@
 <script>
-MathJax = {
+window.MathJax = {
   tex: {
-    inlineMath: [['$', '$']
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
   }
 };
 </script>
