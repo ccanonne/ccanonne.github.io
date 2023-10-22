@@ -16,6 +16,7 @@ So each draw of plop() is 1 with probability π/4: ``plops()`` then computes the
 __Code 2:__ ``fleb()`` picks an integer between 1 and n uniformly at random, and returns 1 if it's prime. What is the probability that this happens? It's entirely obvious, but the [Prime Number Theorem (PNT)](https://en.wikipedia.org/wiki/Prime_number_theorem) guarantees that, as n goes to infinity, this behaves as 1/ln(n). More precisely, if π(n) [Yes, π... but not that π 🥧!] denotes the number of prime numbers in {1,..,n}, then the PNT states that 
 $$\frac{\pi(n) \ln (n)}{n} \to 1
 $$
+which justifies what our code is trying to do.
 
 ```python
 def fleb(n):
