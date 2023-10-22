@@ -45,9 +45,9 @@ def blahs(n):  # Third thing
 ```
 Then ``blahs()`` does that a bunch of time and takes the empirical mean (again using for not particular reason the same number n for "large integer" and "number of experiments to get a good estimate": I didn't try to make your task easy! 👀), thus estimating $p_n$ to accuracy roughly O(1/√n). Which results, fingers crossed, to a good estimate of 6/π² as well: the hope being that "estimate ≈ $p_n$ ≈ 6/π²".
 
-And then... we take the inverse of our extimate, multiply it by 6, take the square root, and tadam! An estimate of π 🥧!
+And then... we take the inverse of our estimate, multiply it by 6, take the square root, and tadam! An estimate of π 🥧!
 
-__Code 4__: Ah, ``meeps()``. What does it do? Surprise: it estimates π 🥧, again – but *very* badly! Basically, ``meep(n)`` generates a uniformly random $2n$-bit string $x\in\{0,1\}^{2n}$, and returns 1 iff $x$ has exactly $n$ bits set to $1$ (that is, has Hamming weight $n$).
+__Code 4__: Ah, ``meeps()``. What does it do? Surprise: it estimates π 🥧, again – but *very* badly! Basically, ``meep(n)`` generates a uniformly random $2n$-bit string $x$, and returns 1 iff $x$ has exactly $n$ bits set to $1$ (that is, has Hamming weight $n$).
 
 
 ```python
