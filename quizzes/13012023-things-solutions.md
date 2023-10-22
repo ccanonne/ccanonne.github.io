@@ -15,7 +15,7 @@ So each draw of plop() is 1 with probability π/4: ``plops()`` then computes the
 
 __Code 2:__ ``fleb()`` picks an integer between 1 and n uniformly at random, and returns 1 if it's prime. What is the probability that this happens? It's entirely obvious, but the [Prime Number Theorem (PNT)](https://en.wikipedia.org/wiki/Prime_number_theorem) guarantees that, as n goes to infinity, this behaves as 1/ln(n). More precisely, if π(n) [Yes, π... but not that π 🥧!] denotes the number of prime numbers in {1,..,n}, then the PNT states that
 
-$$\frac{\pi(n) \ln (n)}{n} \rightarrow 1$$
+$$\frac{\pi(n) \ln n}{n} \rightarrow 1$$
 
 which justifies what our code is trying to do.
 
@@ -33,7 +33,7 @@ Now, what does ``flebs()`` do? Given a (large enough?) n, it tries to estimate t
 💡 Note that there is no particular reason to use the same n for both the "large number in ``fleb()`` *and* the number of repetitions to do the statistical estimate. They are absolutely not tied to each other, but that quiz didn't try **not** to confuse you 🙃. To be more precise, for a given n, each call to ``fleb(n+1)`` is a Bernoulli with parameter $\frac{\pi(n+1)}{n+1}\approx 1/\ln n$ (this is what we are trying to estimate), and so also with variance $\sigma^2 \approx 1/\ln n$. If we were to take the empirical mean over $N$ repetitions, we'd get an estimator with variance $\sigma^2/N \approx 1/(N\ln n)$, so we expect it to oscillate around its mean by a few standard deviations, so $O(1/\sqrt{N\log n})$. For our choice of $N=n$, that gives an estimate of $\frac{\pi(n+1)}{n+1}$ within $\pm O(1/\sqrt{n\log n})$, so an estimate of $1$ within $\pm O(\sqrt{\log n/n})$.
 
 __Code 3:__ Oh, I like that one, and [it's not the first time I mentioned it!](https://twitter.com/ccanonne_/status/1331534438770020353). There is a very [nice probability fact](https://en.wikipedia.org/wiki/Coprime_integers#Probability_of_coprimality), which has a very easy heuristic but "wrong" proof (and a not-so-easy correct one to make it formal) which states that the probability
-$$p_n = \Pr[ \text{gcd}(x,y) = 1 ]
+$$p\_n = \Pr[ \text{gcd}(x,y) = 1 ]
 $$
 that two independent and uniformly random integers in {1,..,n} are coprime goes to 6/π² as n grows. So ``blah()``, armed with that fact, picks two such integers, and returns 1 iff they are coprime, proudly returning a Bernoulli r.v. with parameter $p_n$.
 
