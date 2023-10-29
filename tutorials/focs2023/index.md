@@ -19,3 +19,5 @@ The program will feature talks on recent and exciting results in this area, and 
   * [Guy Van den Broeck](https://web.cs.ucla.edu/~guyvdb/) (UCLA)
 
 __Call for Open Problems:__ To suggest an open problem, please [fill this Google form](https://docs.google.com/forms/d/e/1FAIpQLSf_0me17ooezTjiVWVRgkcdJ2pAmCNxxRzZ_9WdAVJ7ojGGCg/viewform) 📋
+
+__Dinner__: to gauge interest in a dinner 🍲 on November 6 (first day) for the workshop participants, please [fill this other Google form](https://docs.google.com/forms/d/e/1FAIpQLSdHfFUMnsq-hoFZ3HwwqfAuU2AYgDwkzMgSdZvQ9L-Z5wD0bQ/viewform) 📋
