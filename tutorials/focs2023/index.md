@@ -13,7 +13,24 @@ The program will feature talks on recent and exciting results in this area, and 
 
 * November 6 (Day 1)
   * [Inbal Livni Navon](http://inballn.su.domains/) (Stanford University)
+    <details>
+
+    <summary>"Indistinguishable Generative Models of Huge Objects"</summary>
+    
+    #### Abstract:
+    In this talk I am going to discuss generative models of huge objects, from the perspective of a recent notion called outcome indistinguishability. In generative models, the goal is to generate a distribution that is similar to a specific input object (or distribution). When the input object is huge and complex and cannot be read entirely, how do we find a generative model for our object? How do we define similarity between our model and the object? In our work, we answer both questions using outcome indistinguishability. In the talk, I am going to explain what outcome indistinguishability is, and how it is helpful in our setting of learning generative models. 
+    
+    </details>
+
   * [Yury Polyanskiy](https://people.lids.mit.edu/yp/homepage/) (MIT)
+    
+    <details>
+    <summary>"Likelihood-free hypothesis testing"</summary>
+    
+    #### Abstract:
+    Modern theoretical models in particle physics, climate modeling etc often provide predictions in the form of extremely complex simulators. Thus, in order to empirically validate such theories a statistician needs to compare an experimental sample against several simulated ones, corresponding to different choices of phenomenological parameters of the theory. This area of work, known under the names of likelihood-free inference (LFI) or simulation-based inference, can be seen as extension of classical two-sample testing to more than two samples. In this talk we will present minimax sample complexities and discover the existence of a tradeoff between the sizes of experimental sample and the simulated ones, in particular showing the possibility of testing hypotheses without estimating densities. As a by-product of this tradeoff we discover (a) a universal relation between the sample complexities of goodness-of-fit (identity) testing and density estimation; (b) new methods for optimal two-sample and indentity testing based on classification accuracy. Joint work with Patrik Gerber (MIT) and Yanjun Han (Courant).
+    
+    </details>
 * November 7 (Day 2)
   * [Arnab Bhattacharyya](https://www.comp.nus.edu.sg/~arnab/) (NUS)
   * [Guy Van den Broeck](https://web.cs.ucla.edu/~guyvdb/) (UCLA)
