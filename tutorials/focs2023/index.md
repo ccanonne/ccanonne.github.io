@@ -22,8 +22,7 @@ The program will feature talks on recent and exciting results in this area, and 
     
     </details>
 
-  * [Yury Polyanskiy](https://people.lids.mit.edu/yp/homepage/) (MIT)
-    
+  * [Yury Polyanskiy](https://people.lids.mit.edu/yp/homepage/) (MIT)    
     <details>
     <summary>"Likelihood-free hypothesis testing"</summary>
     
