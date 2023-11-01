@@ -7,12 +7,12 @@ High-dimensional probability distributions are currently omnipresent as models f
 
 The goal of the proposed workshop is to highlight current trends in research on __algorithmic aspects of high-dimensional probabilistic models__. Specifically, we will focus on recent works that identify __new directions for the TCS community__, so as to encourage newcomers to delve into the important problems in the area. The workshop is particularly timely, as it is increasingly in vogue to be presented with generative models that sample from a distribution _D_, with the goal being to efficiently learn information about _D_. What are rigorous guarantees that can be made when _D_ is high-dimensional and  "complex"? Better understanding of the computational aspects of such questions can  be potentially impactful for a number of areas, e.g., security, machine learning, probabilistic programming, etc.
 
-__Program__: tentative (more details available soon)
+__Program__: All talks will take place in room __Sequoia D, 9—10:15am.__
 
 The program will feature talks on recent and exciting results in this area, and will gather open problems in the topic from and for the participants: 
 
 * November 6 (Day 1)
-  * [Inbal Livni Navon](http://inballn.su.domains/) (Stanford University)
+  * 9:00-9:35: [Inbal Livni Navon](http://inballn.su.domains/) (Stanford University)
     <details>
 
     <summary>"Indistinguishable Generative Models of Huge Objects"</summary>
@@ -21,7 +21,7 @@ The program will feature talks on recent and exciting results in this area, and 
     In this talk I am going to discuss generative models of huge objects, from the perspective of a recent notion called outcome indistinguishability. In generative models, the goal is to generate a distribution that is similar to a specific input object (or distribution). When the input object is huge and complex and cannot be read entirely, how do we find a generative model for our object? How do we define similarity between our model and the object? In our work, we answer both questions using outcome indistinguishability. In the talk, I am going to explain what outcome indistinguishability is, and how it is helpful in our setting of learning generative models.     
     </details>
 
-  * [Yury Polyanskiy](https://people.lids.mit.edu/yp/homepage/) (MIT)    
+  * 9:40-10:15: [Yury Polyanskiy](https://people.lids.mit.edu/yp/homepage/) (MIT)    
     <details>
     <summary>"Likelihood-free hypothesis testing"</summary>
     
@@ -31,7 +31,7 @@ The program will feature talks on recent and exciting results in this area, and 
     Joint work with Patrik Gerber (MIT) and Yanjun Han (Courant).    
     </details>
 * November 7 (Day 2)
-  * [Arnab Bhattacharyya](https://www.comp.nus.edu.sg/~arnab/) (NUS)
+  * 9:00-9:35: [Arnab Bhattacharyya](https://www.comp.nus.edu.sg/~arnab/) (NUS)
     <details>
 
     <summary>"TV Distance Estimation is as easy as Probabilistic Inference"</summary>
@@ -43,7 +43,7 @@ The program will feature talks on recent and exciting results in this area, and 
        
     Joint work with Sutanu Gayen (IIT Kanpur), Kuldeep Meel (Toronto & NUS), Dimitrios Myrisiotis (NUS), A. Pavan (Iowa State), and N.V. Vinodchandran (U. Nebraska Lincoln).
     </details>
-  * [Guy Van den Broeck](https://web.cs.ucla.edu/~guyvdb/) (UCLA)
+  * 9:40-10:15: [Guy Van den Broeck](https://web.cs.ucla.edu/~guyvdb/) (UCLA)
     <details>
 
     <summary>"Tractable Probabilistic Circuits"</summary>
