@@ -1,3 +1,2 @@
 - Learning in LDP or communication constraints under Kolmogorov distance
-- simple hypothesis testing: shuffle or LDP
-- GMT
+- simple hypothesis testing: shuffle or LDP (that last one is done!)
