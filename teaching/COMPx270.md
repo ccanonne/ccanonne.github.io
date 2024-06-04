@@ -11,3 +11,6 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
 
 - Chapter 3: _Balls in Bins_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap3.pdf)
+
+- Chapter 3: _Derandomisation_
+ [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap4.pdf)
