@@ -7,10 +7,13 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap1.pdf)
  [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides1.pdf)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial1.pdf)
+ [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial1-solutions.pdf)
  [🎞️ [Video]](https://youtu.be/XER26HHsu8M)
 
 - Chapter 2: _Concentration Bounds, and Tricks_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap2.pdf)
+ [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides2.pdf)
+ [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial2.pdf)
 
 - Chapter 3: _Balls in Bins_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap3.pdf)
