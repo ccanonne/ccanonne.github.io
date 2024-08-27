@@ -25,6 +25,8 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
 - Chapter 4: _Derandomisation_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap4.pdf)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial4.pdf)
+ [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial4-solutions.pdf)
 
 - Chapter 5: _Graph algorithms_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap5.pdf)
+ [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial5.pdf)
