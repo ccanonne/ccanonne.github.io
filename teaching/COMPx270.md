@@ -18,15 +18,17 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
 
 - Chapter 3: _Balls in Bins_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap3.pdf)
- [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides2.pdf) (quite bare)
+ [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides3.pdf) (quite bare)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial3.pdf)
  [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial3-solutions.pdf)
 
 - Chapter 4: _Derandomisation_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap4.pdf)
+ [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides4.pdf)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial4.pdf)
  [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial4-solutions.pdf)
 
 - Chapter 5: _Graph algorithms_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap5.pdf)
+ [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides5-annotated.pdf) (annotated)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial5.pdf)
