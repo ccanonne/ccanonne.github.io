@@ -35,5 +35,6 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial5.pdf)
 
 
-Feedback and suggestions welcome. The LaTeX source for the lecture notes (up to Chapter 5 so far), as well as some of the accompanying material, is [available on GitHub](https://github.com/ccanonne/compx270/) under a CC BY-NC-ND 4.0 license 
-![Licence icon](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png).
+Feedback and suggestions welcome. The LaTeX source for the lecture notes (up to Chapter 5 so far), as well as some of the accompanying material, is [available on GitHub](https://github.com/ccanonne/compx270/) under a CC BY-NC-ND 4.0 license. 
+
+![Licence icon](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)
