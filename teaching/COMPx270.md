@@ -33,9 +33,11 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
  [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides5.pdf)
  [🧑‍🏫 [Slides] (annotated)](https://ccanonne.github.io/files/compx270-slides5-annotated.pdf)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial5.pdf)
+ [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial5-solutions.pdf)
 
 - Chapter 6: _Hashing and Friends_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap6.pdf)
+ [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial6.pdf)
 
 
 Feedback and suggestions welcome. The LaTeX source for the lecture notes (up to Chapter 5 so far), as well as some of the accompanying material, is [available on GitHub](https://github.com/ccanonne/compx270/) under a CC BY-NC-ND 4.0 license. 
