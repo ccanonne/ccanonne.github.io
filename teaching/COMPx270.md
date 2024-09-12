@@ -41,7 +41,7 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial6.pdf)
  [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial6-solutions.pdf)
 
-- Chapter 6: _Nearest Neighbours and dimensionality reduction_
+- Chapter 7: _Nearest Neighbours and dimensionality reduction_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap7.pdf)
  [🧑‍🏫 [Slides] (annotated)](https://ccanonne.github.io/files/compx270-slides7-annotated.pdf)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial7.pdf)
