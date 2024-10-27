@@ -45,7 +45,39 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap7.pdf)
  [🧑‍🏫 [Slides] (annotated)](https://ccanonne.github.io/files/compx270-slides7-annotated.pdf)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial7.pdf)
+ [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial7-solutions.pdf)
 
+- Chapter 8: _Streaming and Sketching I_
+ [📝 [Lecture notes 🚧]](https://ccanonne.github.io/files/compx270-chap8.pdf)
+ [🧑‍🏫 [Slides] (annotated)](https://ccanonne.github.io/files/compx270-slides8-annotated.pdf)
+ [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial8.pdf)
+ [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial8-solutions.pdf)
+
+- Chapter 9: _Streaming and Sketching II_
+ [📝 [Lecture notes 🚧]](https://ccanonne.github.io/files/compx270-chap9.pdf)
+ [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides9-annotated.pdf)
+ [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial9.pdf)
+ [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial9-solutions.pdf)
+
+- Chapter 10: _Linear Programming and Randomised Rounding_
+ [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap10.pdf)
+ [🧑‍🏫 [Slides] (annotated)](https://ccanonne.github.io/files/compx270-slides10-annotated.pdf)
+ [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial10.pdf)
+ [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial10-solutions.pdf)
+
+- Chapter 11: _Learning and testing probability distributions_
+ [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap11.pdf)
+ [🧑‍🏫 [Slides] (annotated)](https://ccanonne.github.io/files/compx270-slides11-annotated.pdf)
+ [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial11.pdf)
+ [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial11-solutions.pdf)
+
+- Chapter 12: _Learning from Experts_
+ [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap12.pdf)
+ [🧑‍🏫 [Slides] (annotated)](https://ccanonne.github.io/files/compx270-slides12-annotated.pdf)
+ [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial12.pdf)
+ [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial12-solutions.pdf)
+
+**Two of the lecture note chapters (Chapters 8 and 9, indicated by a construction sign 🚧) are still barebone, and merely an outline: they will be updated in the future, before the next iteration of the course in 2025.**
 
 Feedback and suggestions welcome. The LaTeX source for the lecture notes (up to Chapter 5 so far), as well as some of the accompanying material, is [available on GitHub](https://github.com/ccanonne/compx270/) under a CC BY-NC-ND 4.0 license. 
 
