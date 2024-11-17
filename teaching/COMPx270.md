@@ -77,8 +77,8 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial12.pdf)
  [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial12-solutions.pdf)
 
-**Two of the lecture note chapters (Chapters 8 and 9, indicated by a construction sign 🚧) are still barebone, and merely an outline: they will be updated in the future, before the next iteration of the course in 2025.**
+**Two of the lecture note chapters (Chapters 8 and 9, indicated by a construction sign 🚧) are still incomplete: they will be updated in the future, before the next iteration of the course in 2025.**
 
-Feedback and suggestions welcome. The LaTeX source for the lecture notes (up to Chapter 5 so far), as well as some of the accompanying material, is [available on GitHub](https://github.com/ccanonne/compx270/) under a CC BY-NC-ND 4.0 license. 
+Feedback and suggestions welcome. The LaTeX source for the lecture notes, as well as some of the accompanying material, is [available on GitHub](https://github.com/ccanonne/compx270/) under a CC BY-NC-ND 4.0 license. 
 
 ![Licence icon](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)
