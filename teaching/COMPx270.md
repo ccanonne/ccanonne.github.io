@@ -3,6 +3,9 @@ This page will be updated weekly, as the content is written and uploaded. 12 lec
 
 Each chapter is the basis for a two-hour lecture, and the class is aimed at last-year undergrads and masters of computer science students, without required previous exposure to advanced algorithms. It is not, by design, meant to be comprehensive. Some very nice algorithms _will_ be missing; many important ideas may not make the cut.
 
+- Chapter 0: _Preliminaries: What to know before we start_
+ [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap0.pdf)
+
 - Chapter 1: _Randomness, Probability, and Algorithms_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap1.pdf)
  [🎞️ [Video]](https://youtu.be/XER26HHsu8M)
