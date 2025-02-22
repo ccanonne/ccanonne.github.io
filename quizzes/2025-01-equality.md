@@ -72,4 +72,4 @@ The upper bound (algorithm) is not too complicated, but we won't give it here (y
 
 Which brings us to the lava lamps! 🎲
 
-> __Theorem.__(Alice and Bob get out of Jail) The (public-coin) randomized communication complexity of $$\text{EQ}_n$$ is $$R^{pub}_{1/3}(\text{EQ}_n) = O(1)$$. Moreover, given $k$ bits of communication, $$\text{EQ}_n$$ can be solved with probability of success $$1-1/2^k$$.
+> __Theorem__(Alice and Bob Get Out of Jail). The (public-coin) randomized communication complexity of $$\text{EQ}_n$$ is $$R^{pub}_{1/3}(\text{EQ}_n) = O(1)$$. Moreover, given $k$ bits of communication, $$\text{EQ}_n$$ can be solved with probability of success $$1-1/2^k$$.
