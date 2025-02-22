@@ -6,7 +6,7 @@ _See the [Quiz on BlueSky](https://bsky.app/profile/ccanonne.bsky.social/post/3l
 
  🧩 📊 Alice and Bob are in trouble. They've been accused (wrongly, of course!) of stealing classified data, and as theorists they now have to prove they innocence and defend their honour: they've never used any data!
 
-Now their lawyers will give them each a statement, including a list of things they must swear to have done or not. So many things—n of them—to state or deny! To be found innocent, they'd better agree on all of these n items..
+Now their lawyers will give them each a statement, including a list of things they must swear to have done or not. So many things—n of them—to state or deny! To be found innocent, they'd better agree on all of these $`n`$ items..
 
 That's the trick though. They won't get these lists before the trial!
 
@@ -88,7 +88,7 @@ This is amazing! And what's better, this also shows the upper bound of the previ
 > __Theorem__(Newman's Theorem). For any $f$, $$R^{priv}_{1/3}(f) \leq R^{pub}_{1/3}(f) + O(\log n)$$.
 This theorem is **amazing**. Even better, it is conceptually very simple, and can generalize beyond communication complexity: the idea is to show that "well, actually, Alice and Bob can always transform a public-coin protocol (using an arbitrary amount of shared random bits) into one that that just picks the random string $$r$$ uniformly at random _among only $$T=O(n)$$ fixed options_." Which is great, because now **a private-coin protocol can simulate the public-coin one** by making Alice to pick $r$ at random by herself, and tell Bob which of the $T$ options it has picked... which only takes $$\log T = O(\log n)$$ bits of communication!
 
-# Concluding remark
+# Concluding remarks
 The public-coin protocol for Equality given above seems quite _ad hoc_: interestingly, one way to interpret it is to scream _"Error-correcting code!"_ 3 times and ask the coding theorist that appears. What the protocol actually does with that random string $$r$$ can be interpreted as passing $$a$$ and $$b$$ through the [Hadamard code](https://en.wikipedia.org/wiki/Hadamard_code) $$C\colon \\{0,1\\}^n \to \\{0,1\\}^{2^n}$$, an error-correcting code with _distance_ 1/2: if $$a\neq b$$, then $$C(a)$$ and $$C(b)$$ differ in exactly half of their $$2^n$$ bits. Then choosing $$r$$ uniformly at random corresponds to picking one of these $$2^n$$ bits uniformly at random -- the same for Alice and Bob -- and checking whether $$C(a)_r=C(b)_r$$. So if $$a\neq b$$, then they'll find a coordinate on which $$C(a),C(b)$$ differ with propbability half!
 
 Seen this way, there is nothing specific about the Hadamard code: any error-correcting code $$C'\colon \\{0,1\\}^n \to \\{0,1\\}^{k}$$ with constant distance will do. And having $$k$$ smaller than $$2^n$$ (in particular, some good error-correcting code exist with $$k=O(n)$$) means needing fewer random bits: $$\log k = O(\log n)$$ suffice! Which matches what Newman's Theorem guarantees exists....
