@@ -6,7 +6,7 @@ _See the [Quiz on BlueSky](https://bsky.app/profile/ccanonne.bsky.social/post/3l
 
  🧩 📊 Alice and Bob are in trouble. They've been accused (wrongly, of course!) of stealing classified data, and as theorists they now have to prove they innocence and defend their honour: they've never used any data!
 
-Now their lawyers will give them each a statement, including a list of things they must swear to have done or not. So many things—n of them—to state or deny! To be found innocent, they'd better agree on all of these $`n`$ items..
+Now their lawyers will give them each a statement, including a list of things they must swear to have done or not. So many things—$`n`$ of them—to state or deny! To be found innocent, they'd better agree on all of these $`n`$ items..
 
 That's the trick though. They won't get these lists before the trial!
 
