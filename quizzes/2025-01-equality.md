@@ -45,7 +45,31 @@ Let's try to extract the gist of the question:
 + To do so, they can only communicate __one__ bit of information (through the waving 👋) to each other. That's not a lot, given that both $$a$$ and $$b$$ require $$n$$ bits to fully communicate!
 + But have an extra resource: they have _shared randomness_, which you can model as a string of uniformly random bits $$r\in\\{0,1\\}^\ast$$ (thanks to the lava lamp which they both observe), which is independent of $$a,b$$.
 
-This question, framed this way, is known as the EQUALITY$${}_n$$ problem in communication complexity:
+This question, framed this way, is known as the $$\text{EQ}_n$$ problem in communication complexity:
 > How much communication between Alice and Bob is required to decide whether $$a$$ equal to $$b$$?
-and more specifically, here, the randomized communication complexity of EQUALITY$${}_n$$, in the public-coin 🎲 setting. _("Public-coin" refers to the fact that there is shared randomness: there is a magic fair coin being tossed publicly infinitely many times, that both Alice and Bob observe.)_
-That's good news for Alice and Bob, since a lot of **very** clever people have done a lot of work on communication complexity. **There's hope.** 🎉
+
+and more specifically, here, the _randomized communication complexity_ of the Equality function, $$R^{pub}(\text{EQ}_n)$$, in the public-coin 🎲 setting. _("Public-coin" refers to the fact that there is shared randomness: there is a magic fair coin being tossed publicly infinitely many times, that both Alice and Bob observe.)_
+
+That's good news for Alice and Bob, since a lot of **very** clever people have done a lot of work on communication complexity over the past decades. **There's hope.** 🎉
+
+## What's the answer?
+As [≈21% of you answered at the time I write this](https://bsky.app/profile/ccanonne.bsky.social/post/3lidokfl6tq2n), by communicating only _one_ bit 👋 __Alice and Bob can succeed with probability at least 50%__. I don't know how to emphasize how _absolutely bonkers_ that is 🤯: they both have an arbitrary $$n$$-bit string, and yet _1 measly bit_ is enough to decide whether they're equal or different!
+
+Thanks to the lava lamp, that is...
+
+## How do we do that?
+Let's first consider what happens without randomness 🎲 at all: no lava lamp, first, and no randomness for Alice and Bob either. If they must act deterministically and succeed no matter what $$a,b$$ are, then there's basically nothing they can do unless they communicate $$\Omega(n)$$ bits -- basically their whole input. Put differentially, with only one bit of communciation, Deterministic-Alice and Deterministic-Bob are screwed, and go to jail.
+
+> The deterministic communication complexity of $$\text{EQ}_n$$ is $$D(\text{EQ}_n) = \Omega(n)$$.
+
+But the deterministic requirement is a lot to ask. Allowing Alice and Bob to use their own "private" (not shared) randomness, and err with some probability $$\delta < 1/2$$, could help maybe? _(Here we want probability less than 1/2, since the trivial protocol where Alice chooses an answer at random (without even looking at her input $$a$$) and sends it to Bob takes one bit of communication, and has error exactly 1/2...)_
+
+Well, yes. But not __that__ much: one can prove that to achieve probability of error say $$\delta=1/3$$, with only private randomness Alice and Bob still need to communicate quite a lot!
+
+> The (private-coin) randomized communication complexity of $$\text{EQ}_n$$ is $$R_{1/3}(\text{EQ}_n) = \Theta(\log n)$$.
+
+The lower bound actually follows from the deterministic case, $$D(\text{EQ}_n) = \Omega(n)$$, as in general one can show (it's not trivial!) that $$R_{1/3}(f) = \Omega(D(f))$$. That's not exactly what we want (we want to see what's the best Alice and Bob could do with _one_ bit of communication), but somehow this does imply that the best probability of error they could achieve __without public randomness__ vanishes with $$n$$.
+
+Which brings us to the lava lamps! 🎲
+
+> The (public-coin) randomized communication complexity of $$\text{EQ}_n$$ is $$R^{pub}_{1/3}(\text{EQ}_n) = O(1)$$. Moreover, given $k$ bits of communication, $$\text{EQ}_n$$ can be solved with probability of success $$1-1/2^k$$.
