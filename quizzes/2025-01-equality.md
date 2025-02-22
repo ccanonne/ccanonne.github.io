@@ -78,6 +78,7 @@ Here is the basic idea:
 + Alice and Bob use the lava lamps to agree on a uniformly random string $$r\in\\{0,1\\}^n$$.
 + They compute respectively the bits $x = \langle a, r\rangle = \sum_{i=1} a_i r_i \mod 2$ and $y = \langle b, r\rangle = \sum_{i=1} b_i r_i \mod 2$
 + By waving 👋 (or not), Alice learns $$y$$, Bob learns $$x$$, and they both say "equal!" iff $$x=y$$
+  
 _(One could argue this is two bits of communication, one from Alice to Bob and one from Bob to Alice. Well, this is just so that both know the answer: if we just want Bob to know the answer, then only Alice needs to send $`x`$ to him)_
 
 It is not hard to see that (1) if $$a=b$$, then of course $$x=y$$ (always); and that if $$a\neq b$$, then they differ in at least _one_ bit, say the $$i$$-th and that contribution $$r_i a_i$$ vs. $$b_i r_i$$ to the sum modulo 2 will make $$x \neq y$$ will probability $$1/2$$ over the randomness of $$r$$.
@@ -85,7 +86,7 @@ It is not hard to see that (1) if $$a=b$$, then of course $$x=y$$ (always); and 
 (Given $$k$$ bits of communication instead of $$1$$, repeat the above $$k$$ times independently, and only say "equal" if all $$k$$ runs outputted "equal". That drives the probability of error to 0 exponentially fast.)
 
 This is amazing! And what's better, this also shows the upper bound of the previous theorem ($$R^{priv}_{1/3}(\text{EQ}_n) = O(\log n)$$ immediaely, via a jewel of a result know as Newman's Theorem:
-> __Theorem__(Newman's Theorem). For any $f$, $`R^{priv}_{1/3}(f) \leq R^{pub}_{1/3}(f) + O(\log n)`$.
+> __Theorem__ (Newman's Theorem). For any $f$, $`R^{priv}_{1/3}(f) \leq R^{pub}_{1/3}(f) + O(\log n)`$.
 
 This theorem is **amazing**. Even better, it is conceptually very simple, and can generalize beyond communication complexity: the idea is to show that "well, actually, Alice and Bob can always transform a public-coin protocol (using an arbitrary amount of shared random bits) into one that that just picks the random string $$r$$ uniformly at random _among only $`T=O(n)`$ fixed options_." Which is great, because now **a private-coin protocol can simulate the public-coin one** by making Alice to pick $r$ at random by herself, and tell Bob which of the $T$ options it has picked... which only takes $$\log T = O(\log n)$$ bits of communication!
 
