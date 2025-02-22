@@ -66,27 +66,27 @@ But the deterministic requirement is a lot to ask. Allowing Alice and Bob to use
 
 Well, yes. But not __that__ much: one can prove that to achieve probability of error say $$\delta=1/3$$, with only private randomness Alice and Bob still need to communicate quite a lot!
 
-> __Theorem.__ The (private-coin) randomized communication complexity of $$\text{EQ}_n$$ is $$R^{priv}_{1/3}(\text{EQ}_n) = \Theta(\log n)$$.
+> __Theorem.__ The (private-coin) randomized communication complexity of $`\text{EQ}_n`$ is $`R^{priv}_{1/3}(\text{EQ}_n) = \Theta(\log n)`$.
 
-The upper bound (algorithm) is not too complicated, but we won't give it here (you'll why soon! 🧐). As for the lower bound, it actually follows from the deterministic case, $$D(\text{EQ}_n) = \Omega(n)$$, as in general one can show (it's not trivial!) that $$R^{priv}_{1/3}(f) = \Omega(D(f))$$. That's not exactly what we want (we want to see what's the best Alice and Bob could do with _one_ bit of communication), but somehow this does imply that the best probability of error they could achieve __without public randomness__ vanishes with $$n$$.
+The upper bound (algorithm) is not too complicated, but we won't give it here (you'll why soon! 🧐). As for the lower bound, it actually follows from the deterministic case, $`D(\text{EQ}_n) = \Omega(n)`$, as in general one can show (it's not trivial!) that $`R^{priv}_{1/3}(f) = \Omega(D(f))`$. That's not exactly what we want (we want to see what's the best Alice and Bob could do with _one_ bit of communication), but somehow this does imply that the best probability of error they could achieve __without public randomness__ vanishes with $$n$$.
 
 Which brings us to the lava lamps! 🎲
 
-> __Theorem__(Alice and Bob Get Out of Jail). The (public-coin) randomized communication complexity of $$\text{EQ}_n$$ is $$R^{pub}_{1/3}(\text{EQ}_n) = O(1)$$. Moreover, given $k$ bits of communication, $$\text{EQ}_n$$ can be solved with probability of success $$1-1/2^k$$.
+> __Theorem__(Alice and Bob Get Out of Jail). The (public-coin) randomized communication complexity of $`\text{EQ}_n`$ is $`R^{pub}_{1/3}(\text{EQ}_n) = O(1)`$. Moreover, given $`k`$ bits of communication, $`\text{EQ}_n`$ can be solved with probability of success $$1-1/2^k$$.
 
 Here is the basic idea:
 + Alice and Bob use the lava lamps to agree on a uniformly random string $$r\in\\{0,1\\}^n$$.
 + They compute respectively the bits $x = \langle a, r\rangle = \sum_{i=1} a_i r_i \mod 2$ and $y = \langle b, r\rangle = \sum_{i=1} b_i r_i \mod 2$
 + By waving 👋 (or not), Alice learns $$y$$, Bob learns $$x$$, and they both say "equal!" iff $$x=y$$
-_(One could argue this is two bits of communication, one from Alice to Bob and one from Bob to Alice. Well, this is just so that both know the answer: if we just want Bob to know the answer, then only Alice needs to send $$x$$ to him)_
+_(One could argue this is two bits of communication, one from Alice to Bob and one from Bob to Alice. Well, this is just so that both know the answer: if we just want Bob to know the answer, then only Alice needs to send $`x`$ to him)_
 
 It is not hard to see that (1) if $$a=b$$, then of course $$x=y$$ (always); and that if $$a\neq b$$, then they differ in at least _one_ bit, say the $$i$$-th and that contribution $$r_i a_i$$ vs. $$b_i r_i$$ to the sum modulo 2 will make $$x \neq y$$ will probability $$1/2$$ over the randomness of $$r$$.
 
 (Given $$k$$ bits of communication instead of $$1$$, repeat the above $$k$$ times independently, and only say "equal" if all $$k$$ runs outputted "equal". That drives the probability of error to 0 exponentially fast.)
 
 This is amazing! And what's better, this also shows the upper bound of the previous theorem ($$R^{priv}_{1/3}(\text{EQ}_n) = O(\log n)$$ immediaely, via a jewel of a result know as Newman's Theorem:
-> __Theorem__(Newman's Theorem). For any $f$, $$R^{priv}_{1/3}(f) \leq R^{pub}_{1/3}(f) + O(\log n)$$.
-This theorem is **amazing**. Even better, it is conceptually very simple, and can generalize beyond communication complexity: the idea is to show that "well, actually, Alice and Bob can always transform a public-coin protocol (using an arbitrary amount of shared random bits) into one that that just picks the random string $$r$$ uniformly at random _among only $$T=O(n)$$ fixed options_." Which is great, because now **a private-coin protocol can simulate the public-coin one** by making Alice to pick $r$ at random by herself, and tell Bob which of the $T$ options it has picked... which only takes $$\log T = O(\log n)$$ bits of communication!
+> __Theorem__(Newman's Theorem). For any $f$, $`R^{priv}_{1/3}(f) \leq R^{pub}_{1/3}(f) + O(\log n)`$.
+This theorem is **amazing**. Even better, it is conceptually very simple, and can generalize beyond communication complexity: the idea is to show that "well, actually, Alice and Bob can always transform a public-coin protocol (using an arbitrary amount of shared random bits) into one that that just picks the random string $$r$$ uniformly at random _among only $`T=O(n)`$ fixed options_." Which is great, because now **a private-coin protocol can simulate the public-coin one** by making Alice to pick $r$ at random by herself, and tell Bob which of the $T$ options it has picked... which only takes $$\log T = O(\log n)$$ bits of communication!
 
 # Concluding remarks
 The public-coin protocol for Equality given above seems quite _ad hoc_: interestingly, one way to interpret it is to scream _"Error-correcting code!"_ 3 times and ask the coding theorist that appears. What the protocol actually does with that random string $$r$$ can be interpreted as passing $$a$$ and $$b$$ through the [Hadamard code](https://en.wikipedia.org/wiki/Hadamard_code) $$C\colon \\{0,1\\}^n \to \\{0,1\\}^{2^n}$$, an error-correcting code with _distance_ 1/2: if $$a\neq b$$, then $$C(a)$$ and $$C(b)$$ differ in exactly half of their $$2^n$$ bits. Then choosing $$r$$ uniformly at random corresponds to picking one of these $$2^n$$ bits uniformly at random -- the same for Alice and Bob -- and checking whether $$C(a)_r=C(b)_r$$. So if $$a\neq b$$, then they'll find a coordinate on which $$C(a),C(b)$$ differ with propbability half!
