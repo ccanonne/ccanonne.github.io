@@ -60,16 +60,16 @@ Thanks to the lava lamp, that is...
 ## How do we do that?
 Let's first consider what happens without randomness 🎲 at all: no lava lamp, first, and no randomness for Alice and Bob either. If they must act deterministically and succeed no matter what $$a,b$$ are, then there's basically nothing they can do unless they communicate $$\Omega(n)$$ bits -- basically their whole input. Put differentially, with only one bit of communciation, Deterministic-Alice and Deterministic-Bob are screwed, and go to jail.
 
-> The deterministic communication complexity of $$\text{EQ}_n$$ is $$D(\text{EQ}_n) = \Omega(n)$$.
+> __Theorem.__ The deterministic communication complexity of $$\text{EQ}_n$$ is $$D(\text{EQ}_n) = \Omega(n)$$.
 
 But the deterministic requirement is a lot to ask. Allowing Alice and Bob to use their own "private" (not shared) randomness, and err with some probability $$\delta < 1/2$$, could help maybe? _(Here we want probability less than 1/2, since the trivial protocol where Alice chooses an answer at random (without even looking at her input $$a$$) and sends it to Bob takes one bit of communication, and has error exactly 1/2...)_
 
 Well, yes. But not __that__ much: one can prove that to achieve probability of error say $$\delta=1/3$$, with only private randomness Alice and Bob still need to communicate quite a lot!
 
-> The (private-coin) randomized communication complexity of $$\text{EQ}_n$$ is $$R_{1/3}(\text{EQ}_n) = \Theta(\log n)$$.
+> __Theorem.__ The (private-coin) randomized communication complexity of $$\text{EQ}_n$$ is $$R_{1/3}(\text{EQ}_n) = \Theta(\log n)$$.
 
-The lower bound actually follows from the deterministic case, $$D(\text{EQ}_n) = \Omega(n)$$, as in general one can show (it's not trivial!) that $$R_{1/3}(f) = \Omega(D(f))$$. That's not exactly what we want (we want to see what's the best Alice and Bob could do with _one_ bit of communication), but somehow this does imply that the best probability of error they could achieve __without public randomness__ vanishes with $$n$$.
+The upper bound (algorithm) is not too complicated, but we won't give it here (you'll why soon! 🧐). As for the lower bound, it actually follows from the deterministic case, $$D(\text{EQ}_n) = \Omega(n)$$, as in general one can show (it's not trivial!) that $$R_{1/3}(f) = \Omega(D(f))$$. That's not exactly what we want (we want to see what's the best Alice and Bob could do with _one_ bit of communication), but somehow this does imply that the best probability of error they could achieve __without public randomness__ vanishes with $$n$$.
 
 Which brings us to the lava lamps! 🎲
 
-> The (public-coin) randomized communication complexity of $$\text{EQ}_n$$ is $$R^{pub}_{1/3}(\text{EQ}_n) = O(1)$$. Moreover, given $k$ bits of communication, $$\text{EQ}_n$$ can be solved with probability of success $$1-1/2^k$$.
+> __Theorem.__(Alice and Bob get out of Jail) The (public-coin) randomized communication complexity of $$\text{EQ}_n$$ is $$R^{pub}_{1/3}(\text{EQ}_n) = O(1)$$. Moreover, given $k$ bits of communication, $$\text{EQ}_n$$ can be solved with probability of success $$1-1/2^k$$.
