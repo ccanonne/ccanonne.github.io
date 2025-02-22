@@ -62,7 +62,7 @@ Let's first consider what happens without randomness 🎲 at all: no lava lamp, 
 
 > __Theorem.__ The deterministic communication complexity of $$\text{EQ}_n$$ is $$D(\text{EQ}_n) = \Omega(n)$$.
 
-But the deterministic requirement is a lot to ask. Allowing Alice and Bob to use their own "private" (not shared) randomness, and err with some probability $$\delta < 1/2$$, could help maybe? _(Here we want probability less than 1/2, since the trivial protocol where Alice chooses an answer at random (without even looking at her input $$a$$) and sends it to Bob takes one bit of communication, and has error exactly 1/2...)_
+But the deterministic requirement is a lot to ask. Allowing Alice and Bob to use their own "private" (not shared) randomness, and err with some probability $$\delta < 1/2$$, could help maybe? _(Here we want probability less than 1/2, since the trivial protocol where Alice chooses an answer at random (without even looking at her input $`a`$) and sends it to Bob takes one bit of communication, and has error exactly 1/2...)_
 
 Well, yes. But not __that__ much: one can prove that to achieve probability of error say $$\delta=1/3$$, with only private randomness Alice and Bob still need to communicate quite a lot!
 
