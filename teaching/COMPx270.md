@@ -21,7 +21,8 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
 
 - Chapter 3: _Balls in Bins_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap3.pdf)
- [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides3.pdf) (quite bare)
+ [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides3.pdf)
+ [🧑‍🏫 [Slides] (annotated)](https://ccanonne.github.io/files/compx270-slides3-annotated.pdf)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial3.pdf)
  [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial3-solutions.pdf)
 
