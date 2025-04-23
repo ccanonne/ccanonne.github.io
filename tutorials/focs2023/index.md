@@ -17,7 +17,7 @@ The program will feature talks on recent and exciting results in this area, and 
 
     <summary>"Indistinguishable Generative Models of Huge Objects"</summary>
     
-#### Abstract:
+    __Abstract:__
     In this talk I am going to discuss generative models of huge objects, from the perspective of a recent notion called outcome indistinguishability. In generative models, the goal is to generate a distribution that is similar to a specific input object (or distribution). When the input object is huge and complex and cannot be read entirely, how do we find a generative model for our object? How do we define similarity between our model and the object? In our work, we answer both questions using outcome indistinguishability. In the talk, I am going to explain what outcome indistinguishability is, and how it is helpful in our setting of learning generative models.     
     </details>
 
@@ -25,7 +25,7 @@ The program will feature talks on recent and exciting results in this area, and 
     <details>
     <summary>"Likelihood-free hypothesis testing"</summary>
     
-#### Abstract:
+    __Abstract:__
     Modern theoretical models in particle physics, climate modeling etc often provide predictions in the form of extremely complex simulators. Thus, in order to empirically validate such theories a statistician needs to compare an experimental sample against several simulated ones, corresponding to different choices of phenomenological parameters of the theory. This area of work, known under the names of likelihood-free inference (LFI) or simulation-based inference, can be seen as extension of classical two-sample testing to more than two samples. In this talk we will present minimax sample complexities and discover the existence of a tradeoff between the sizes of experimental sample and the simulated ones, in particular showing the possibility of testing hypotheses without estimating densities. As a by-product of this tradeoff we discover (a) a universal relation between the sample complexities of goodness-of-fit (identity) testing and density estimation; (b) new methods for optimal two-sample and indentity testing based on classification accuracy.
 
     Joint work with Patrik Gerber (MIT) and Yanjun Han (Courant).    
@@ -36,7 +36,7 @@ The program will feature talks on recent and exciting results in this area, and 
 
     <summary>"TV Distance Estimation is as easy as Probabilistic Inference"</summary>
     
-#### Abstract:
+    __Abstract:__
     We discuss the algorithmic problem of computing the total variation (TV) distance between two high-dimensional probability distributions.   Two highlights are:
     1. The problem of exactly computing the TV distance between two product distributions is #P-complete. This is in stark contrast with other distance measures such as KL, Chi-square, and Hellinger which tensorize over the marginals leading to efficient algorithms.
     2.  We show a novel connection between TV distance estimation and probabilistic inference. In particular, we present an efficient, structure-preserving reduction from relative approximation of TV distance to probabilistic inference over directed graphical models. This reduction leads to a fully polynomial randomized approximation scheme (FPRAS) for estimating TV distances between distributions that are defined by Bayes nets of bounded treewidth. Our approach employs a new notion of partial couplings of high-dimensional distributions, which might be of independent interest.
@@ -48,10 +48,10 @@ The program will feature talks on recent and exciting results in this area, and 
 
     <summary>"Tractable Probabilistic Circuits"</summary>
     
-#### Abstract:
+    __Abstract:__
     Probabilistic circuits represent joint distributions as computation graphs, akin to neural networks. They move beyond other deep generative models and probabilistic graphical models by guaranteeing tractable probabilistic inference for certain classes of queries: marginal probabilities, entropies, expectations, causal effects, etc. Probabilistic circuit models are now also effectively learned from data at scale, and achieve state-of-the-art results in constrained sampling from both language models and natural image distributions. This talk will overview recent developments in efficient probabilistic inference, as well as connections to the theory of probability generating polynomials.
-
-#### Bio: 
+    
+    __Bio:__
     Guy Van den Broeck is an Associate Professor and Samueli Fellow at UCLA, in the Computer Science Department, where he directs the StarAI lab. His research interests are in Machine Learning, Knowledge Representation and Reasoning, and Artificial Intelligence in general. His papers have been recognized with awards from key conferences such as AAAI, UAI, KR, and OOPSLA. Guy is the recipient of an NSF CAREER award, a Sloan Fellowship, and the IJCAI-19 Computers and Thought Award.
     </details>
 
