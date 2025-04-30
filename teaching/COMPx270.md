@@ -60,7 +60,7 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
 
 - Chapter 9: _Streaming and Sketching II_
  [📝 [Lecture notes 🚧]](https://ccanonne.github.io/files/compx270-chap9.pdf)
- [🧑‍🏫 [Slides]](https://ccanonne.github.io/files/compx270-slides9-annotated.pdf)
+ [🧑‍🏫 [Slides] (annotated)](https://ccanonne.github.io/files/compx270-slides9-annotated.pdf)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial9.pdf)
  [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial9-solutions.pdf)
 
