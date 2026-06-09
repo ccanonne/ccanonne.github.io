@@ -39,6 +39,7 @@ Each chapter is the basis for a two-hour lecture, and the class is aimed at last
  [🧑‍🏫 [Slides] (annotated)](https://ccanonne.github.io/files/compx270-slides5-annotated.pdf)
  [✍️ [Tutorial]](https://ccanonne.github.io/files/compx270-tutorial5.pdf)
  [✍️ [Solutions]](https://ccanonne.github.io/files/compx270-tutorial5-solutions.pdf)
+ [🧑‍🏫 [Extra Slides] (KKT algorithm)](https://ccanonne.github.io/files/compx270-slides5-extra-kkt.pdf)
 
 - Chapter 6: _Hashing and Friends_
  [📝 [Lecture notes]](https://ccanonne.github.io/files/compx270-chap6.pdf)
